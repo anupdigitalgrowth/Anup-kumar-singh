@@ -2,1040 +2,2888 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Your Name - WordPress Developer Portfolio | Custom Themes, Plugins, WooCommerce, Speed Optimization">
+        content="Anup Kumar Singh is a Digital Marketing professional specializing in WordPress, SEO and digital growth. Explore WordPress projects, SEO case studies, digital marketing projects and professional experience.">
     <meta name="keywords"
-        content="WordPress Developer, WordPress Designer, Elementor Expert, WooCommerce, Website Speed Optimization, Portfolio">
-    <meta name="author" content="Your Name">
-    <title>Your Name - WordPress Developer &amp; Website Expert</title>
+        content="Anup Kumar Singh, Digital Marketing Specialist, Digital Marketing Executive, WordPress Developer, WordPress Specialist, SEO Specialist, SEO Executive, SEO Expert, WordPress SEO, Digital Marketing Portfolio, SEO Portfolio, WordPress Portfolio">
+    <meta name="author" content="Anup Kumar Singh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://anupkumarsingh.github.io/">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anup Kumar Singh | Digital Marketing | WordPress & SEO Specialist">
+    <meta property="og:description"
+        content="Digital Marketing professional specializing in WordPress, SEO and digital growth. Explore projects, SEO case studies and professional experience.">
+    <meta property="og:url" content="https://anupkumarsingh.github.io/">
+    <meta property="og:image" content="https://anupkumarsingh.github.io/images/og-image.jpg">
+    <meta property="og:site_name" content="Anup Kumar Singh Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anup Kumar Singh | Digital Marketing | WordPress & SEO Specialist">
+    <meta name="twitter:description"
+        content="Digital Marketing professional specializing in WordPress, SEO and digital growth.">
+    <meta name="twitter:image" content="https://anupkumarsingh.github.io/images/og-image.jpg">
+
+    <title>Anup Kumar Singh | Digital Marketing | WordPress & SEO Specialist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup: Person -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Anup Kumar Singh",
+            "jobTitle": "Digital Marketing Specialist | WordPress & SEO",
+            "url": "https://anupkumarsingh.github.io/",
+            "email": "anup@example.com",
+            "knowsAbout": ["Digital Marketing", "WordPress", "SEO", "Content Marketing", "Google Analytics", "Google Search Console"],
+            "sameAs": [
+                "https://www.linkedin.com/in/anupkumarsingh",
+                "https://github.com/anupkumarsingh"
+            ]
+        }
+    </script>
+
+    <!-- Schema Markup: WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Anup Kumar Singh - Digital Marketing Portfolio",
+            "url": "https://anupkumarsingh.github.io/",
+            "description": "Digital Marketing professional specializing in WordPress, SEO and digital growth."
+        }
+    </script>
+
     <style>
-        * {
+        /* ============================================
+           CSS CUSTOM PROPERTIES
+           ============================================ */
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent-primary: #2563eb;
+            --accent-secondary: #059669;
+            --accent-ternary: #d97706;
+            --accent-hover: #1d4ed8;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e1;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+            --font-sans: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+            --section-padding: 5rem 5%;
+            --card-padding: 2rem;
+            --border-radius: 12px;
+            --border-radius-sm: 8px;
+            --border-radius-lg: 20px;
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            --z-nav: 1000;
+            --z-progress: 1001;
+            --z-back-to-top: 998;
+        }
+
+        /* Dark Mode */
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --border-light: #334155;
+            --border-medium: #475569;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.6);
+            --accent-primary: #3b82f6;
+            --accent-secondary: #10b981;
+            --accent-ternary: #f59e0b;
+            --accent-hover: #60a5fa;
+        }
+
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
             overflow-x: hidden;
+            line-height: 1.7;
+            transition: background var(--transition-medium), color var(--transition-medium);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Animated Background */
-        .bg-animation {
+        ::selection {
+            background: var(--accent-primary);
+            color: #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-primary);
+            border-radius: 3px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ============================================
+           SCROLL PROGRESS BAR
+           ============================================ */
+        .scroll-progress {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-ternary));
+            z-index: var(--z-progress);
+            width: 0%;
+            transition: width 0.1s linear;
+            border-radius: 0 2px 2px 0;
         }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Matrix Rain Effect */
-        .matrix {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.15;
-        }
-
-        /* Navigation */
+        /* ============================================
+           NAVIGATION
+           ============================================ */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1.5rem 5%;
-            z-index: 1000;
-            border-bottom: 2px solid #00ff41;
-            box-shadow: 0 4px 30px rgba(0, 255, 65, 0.2);
-        }
-
-        nav ul {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            padding: 0.8rem 5%;
+            z-index: var(--z-nav);
+            border-bottom: 1px solid var(--border-light);
+            transition: all var(--transition-medium);
             display: flex;
-            justify-content: center;
-            gap: 3rem;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+        }
+
+        nav.scrolled {
+            padding: 0.6rem 5%;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-logo span {
+            color: var(--accent-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
             list-style: none;
+            flex-wrap: wrap;
         }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s;
+        .nav-links a {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all var(--transition-fast);
             position: relative;
+            padding: 0.2rem 0;
+            letter-spacing: 0.2px;
+            white-space: nowrap;
         }
-
-        nav a:hover {
-            color: #00ff41;
-            transform: translateY(-2px);
-        }
-
-        nav a::after {
+        .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -2px;
             left: 0;
             width: 0;
             height: 2px;
-            background: #00ff41;
-            transition: width 0.3s;
+            background: var(--accent-primary);
+            transition: width var(--transition-fast);
+            border-radius: 1px;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-primary);
+        }
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
         }
 
-        nav a:hover::after { width: 100%; }
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 0;
+        }
+        .btn-nav {
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            border-radius: 50px;
+            border: 2px solid var(--accent-primary);
+            background: transparent;
+            color: var(--accent-primary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .btn-nav:hover {
+            background: var(--accent-primary);
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        .btn-nav-solid {
+            background: var(--accent-primary);
+            color: #fff;
+        }
+        .btn-nav-solid:hover {
+            background: var(--accent-hover);
+        }
 
-        /* Hero Section */
+        .theme-toggle {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid var(--border-medium);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+            flex-shrink: 0;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 1002;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all var(--transition-fast);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 4px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(4px, -4px);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 2rem;
+            padding: 8rem 5% 4rem;
             position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(5, 150, 105, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
         }
 
-        /* PROFILE IMAGE */
-        .profile-image {
-            width: 220px;
-            height: 220px;
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            color: var(--accent-primary);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-profile-image {
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            margin: 5% auto 1.5rem;
-            border: 6px solid #00ff41;
-            box-shadow: 0 0 40px rgba(0, 255, 65, 0.6),
-                0 0 80px rgba(0, 217, 255, 0.4),
-                0 0 120px rgba(255, 16, 240, 0.2);
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--accent-primary);
+            box-shadow: 0 0 40px rgba(37, 99, 235, 0.25), 0 10px 40px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             display: block;
-            animation: profileGlow 3s ease-in-out infinite;
+            background: var(--bg-card);
             position: relative;
-            z-index: 10;
-            background: #0a0a0a;
         }
-
-        @keyframes profileGlow {
-            0%, 100% {
-                box-shadow: 0 0 40px rgba(0, 255, 65, 0.6),
-                    0 0 80px rgba(0, 217, 255, 0.4),
-                    0 0 120px rgba(255, 16, 240, 0.2);
-                border-color: #00ff41;
-            }
-            50% {
-                box-shadow: 0 0 60px rgba(0, 255, 65, 0.8),
-                    0 0 100px rgba(0, 217, 255, 0.6),
-                    0 0 140px rgba(255, 16, 240, 0.3);
-                border-color: #00d9ff;
-            }
-        }
-
-        .profile-image img {
+        .hero-profile-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 35%;
-            display: block;
+            object-position: center 30%;
         }
 
-        .hero-content h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #00ff41, #00d9ff, #ff10f0);
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            letter-spacing: -2px;
+            line-height: 1.15;
+            color: var(--text-primary);
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: glow 3s ease-in-out infinite;
         }
 
-        @keyframes glow {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.5); }
+        .hero h2 {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
         }
 
-        .hero-content h2 {
-            font-size: 2rem;
-            color: #00d9ff;
-            margin-bottom: 1rem;
+        .hero-tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
         }
 
-        .typing-text {
-            font-size: 1.5rem;
-            color: #00ff41;
-            height: 2rem;
-            margin: 2rem 0;
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 2rem;
         }
-
-        .cursor {
-            display: inline-block;
-            width: 3px;
-            background: #00ff41;
-            animation: blink 0.7s infinite;
+        .hero-badge-item {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            padding: 0.35rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            border: 1px solid var(--border-light);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            transition: all var(--transition-fast);
         }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+        .hero-badge-item:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
         }
 
         .cta-buttons {
             display: flex;
-            gap: 2rem;
+            gap: 0.8rem;
             justify-content: center;
-            margin-top: 3rem;
+            flex-wrap: wrap;
         }
-
         .btn {
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            border: 2px solid #00ff41;
-            background: transparent;
-            color: #00ff41;
+            padding: 0.85rem 2rem;
+            font-size: 0.95rem;
+            border-radius: 50px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all var(--transition-fast);
             font-weight: 600;
             text-decoration: none;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: 0.3px;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background: var(--accent-primary);
+            color: #fff;
+            border-color: var(--accent-primary);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+        .btn-secondary:hover {
+            background: rgba(37, 99, 235, 0.08);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text-secondary);
+            border-color: var(--border-medium);
+        }
+        .btn-outline:hover {
+            border-color: var(--text-secondary);
+            color: var(--text-primary);
+            transform: translateY(-2px);
         }
 
-        .btn::before {
+        /* Open to Work */
+        .open-to-work {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(5, 150, 105, 0.1);
+            color: var(--accent-secondary);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .open-to-work .dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+        }
+
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+        .trust-item {
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+        .trust-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-primary);
+            line-height: 1.2;
+        }
+        .trust-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* ============================================
+           SECTION STYLES
+           ============================================ */
+        section {
+            padding: var(--section-padding);
+            max-width: 1300px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        .section-label::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: #00ff41;
-            transition: left 0.3s;
-            z-index: -1;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 2px;
+            background: var(--accent-primary);
         }
 
-        .btn:hover::before { left: 0; }
-        .btn:hover {
-            color: #0a0a0a;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 255, 65, 0.4);
+        h2.section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.8rem;
+            letter-spacing: -1px;
+            line-height: 1.25;
+            color: var(--text-primary);
         }
 
-        /* Section Styles */
-        section {
-            padding: 6rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+        .section-subtitle.text-left {
+            margin-left: 0;
         }
 
-        h2 {
-            font-size: 3rem;
-            margin-bottom: 3rem;
-            text-align: center;
-            background: linear-gradient(45deg, #00ff41, #00d9ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Skills Section */
-        .skills-grid {
+        /* ============================================
+           CARDS & GRIDS
+           ============================================ */
+        .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
         }
 
-        .skill-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 2px solid #00ff41;
-            border-radius: 15px;
-            padding: 2rem;
-            transition: all 0.3s;
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--border-radius);
+            padding: var(--card-padding);
+            transition: all var(--transition-medium);
             position: relative;
             overflow: hidden;
+            box-shadow: var(--shadow-sm);
         }
-
-        .skill-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0, 255, 65, 0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.3s;
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-medium);
         }
-
-        .skill-card:hover::before {
-            opacity: 1;
-            animation: rotate 4s linear infinite;
-        }
-
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 255, 65, 0.3);
-            border-color: #00d9ff;
-        }
-
-        .skill-card h3 {
-            color: #00ff41;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tag {
-            background: rgba(0, 255, 65, 0.2);
-            color: #00ff41;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid #00ff41;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 2px solid #00d9ff;
-            border-radius: 15px;
-            padding: 2rem;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .project-card:hover::after { left: 100%; }
-        .project-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
-        }
-
-        .project-card h3 {
-            color: #00d9ff;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-card p {
-            color: #ccc;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        /* Certifications */
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .cert-card {
-            background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(0, 217, 255, 0.1));
-            backdrop-filter: blur(10px);
-            border: 2px solid #ff10f0;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .cert-card:hover {
-            transform: translateY(-10px) rotate(2deg);
-            box-shadow: 0 15px 40px rgba(255, 16, 240, 0.3);
-        }
-
-        .cert-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .cert-card h3 {
-            color: #ff10f0;
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
         }
 
-        /* Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .contact-item {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 2px solid #00ff41;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s;
-            text-decoration: none;
-            color: #fff;
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
             display: block;
         }
 
-        .contact-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 255, 65, 0.3);
-            background: rgba(0, 255, 65, 0.1);
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.6rem;
+        }
+        .tag {
+            background: var(--bg-card-hover);
+            color: var(--text-secondary);
+            padding: 0.3rem 0.7rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            border: 1px solid var(--border-light);
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            transition: all var(--transition-fast);
+        }
+        .tag:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+        .tag-accent {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent-primary);
+            border-color: rgba(37, 99, 235, 0.2);
         }
 
-        /* Scroll Progress */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #00ff41, #00d9ff, #ff10f0);
-            z-index: 1001;
-            transition: width 0.1s;
-        }
-
-        /* ========== FOOTER ========== */
-        footer {
-            background: linear-gradient(180deg, #0a0a0a 0%, #111122 100%);
-            border-top: 2px solid #00ff41;
-            padding: 4rem 5% 2rem;
-            margin-top: 2rem;
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
+        /* ============================================
+           ABOUT SECTION
+           ============================================ */
+        .about-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+        .about-text strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .focus-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+        .focus-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem;
+            background: var(--bg-card);
+            border-radius: var(--border-radius-sm);
+            border: 1px solid var(--border-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
+        .focus-item:hover {
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
         }
 
-        .footer-section h3 {
-            color: #00ff41;
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
+        /* ============================================
+           SPECIALIZATION PILLARS
+           ============================================ */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .pillar-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-light);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            transition: all var(--transition-medium);
+            text-align: center;
             position: relative;
-            padding-bottom: 0.5rem;
+            overflow: hidden;
         }
-
-        .footer-section h3::after {
+        .pillar-card::before {
             content: '';
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
-            width: 50px;
-            height: 2px;
-            background: linear-gradient(90deg, #00ff41, #00d9ff);
+            width: 100%;
+            height: 3px;
+            background: var(--accent-primary);
+            opacity: 0;
+            transition: opacity var(--transition-fast);
         }
-
-        .footer-about { display: flex; flex-direction: column; gap: 1rem; }
-        .footer-profile { display: flex; align-items: center; gap: 1rem; }
-
-        .footer-profile img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: 2px solid #00ff41;
-            object-fit: cover;
+        .pillar-card:hover::before {
+            opacity: 1;
         }
-
-        .footer-profile-info h4 { color: #00d9ff; font-size: 1.1rem; }
-        .footer-profile-info p { color: #888; font-size: 0.9rem; }
-        .footer-about p { color: #aaa; line-height: 1.6; font-size: 0.95rem; }
-        .footer-links ul { list-style: none; }
-        .footer-links li { margin-bottom: 0.8rem; }
-
-        .footer-links a {
-            color: #aaa;
-            text-decoration: none;
-            transition: all 0.3s;
+        .pillar-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent-primary);
+        }
+        .pillar-number {
+            font-size: 0.8rem;
+            font-weight: 700;
+            font-family: var(--font-mono);
+            color: var(--accent-primary);
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .pillar-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .pillar-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+        .pillar-card ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 0.8rem;
+        }
+        .pillar-card li {
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
-
-        .footer-links a::before {
-            content: '›';
-            color: #00ff41;
-            font-weight: bold;
+        .pillar-card li::before {
+            content: '✓';
+            color: var(--accent-secondary);
+            font-weight: 700;
+        }
+        .pillar-card.wordpress-pillar {
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        .pillar-card.wordpress-pillar::before {
+            background: var(--accent-primary);
+        }
+        .pillar-card.seo-pillar {
+            border-color: rgba(5, 150, 105, 0.3);
+        }
+        .pillar-card.seo-pillar::before {
+            background: var(--accent-secondary);
+        }
+        .pillar-card.marketing-pillar {
+            border-color: rgba(217, 119, 6, 0.3);
+        }
+        .pillar-card.marketing-pillar::before {
+            background: var(--accent-ternary);
         }
 
-        .footer-links a:hover { color: #00ff41; padding-left: 10px; }
-
-        .footer-contact p {
-            color: #aaa;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
+        /* ============================================
+           TOOLS GRID
+           ============================================ */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 0.8rem;
         }
-
-        .footer-contact span { font-size: 1.2rem; }
-        .footer-contact a { color: #aaa; text-decoration: none; transition: color 0.3s; }
-        .footer-contact a:hover { color: #00d9ff; }
-
-        .footer-social {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
+        .tool-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--border-radius-sm);
+            padding: 1rem;
+            text-align: center;
+            transition: all var(--transition-fast);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .tool-item:hover {
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+        .tool-item .tool-icon {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.4rem;
         }
 
-        .footer-social a {
-            width: 45px;
-            height: 45px;
-            background: rgba(0, 255, 65, 0.1);
-            border: 2px solid #00ff41;
-            border-radius: 50%;
+        /* ============================================
+           PROJECT CARDS
+           ============================================ */
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: all var(--transition-medium);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--border-medium);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            background: var(--bg-card-hover);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.3rem;
-            text-decoration: none;
-            transition: all 0.3s;
+            font-size: 3rem;
+            color: var(--text-muted);
+            overflow: hidden;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .project-body {
+            padding: 1.5rem;
+        }
+        .project-category {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-primary);
+            margin-bottom: 0.4rem;
+        }
+        .project-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .project-card p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+        .project-links {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .project-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: all var(--transition-fast);
+        }
+        .project-link:hover {
+            color: var(--accent-hover);
+            gap: 0.6rem;
         }
 
+        /* ============================================
+           WORDPRESS FILTER
+           ============================================ */
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.2rem;
+            font-size: 0.8rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-medium);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-weight: 500;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        /* ============================================
+           EXPERIENCE TIMELINE
+           ============================================ */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: var(--border-light);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.35rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            border: 2px solid var(--bg-primary);
+        }
+        .timeline-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        .timeline-item .timeline-company {
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+        .timeline-item .timeline-date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .timeline-item p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .timeline-item ul {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+        .timeline-item ul li {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            padding: 0.2rem 0;
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+        }
+        .timeline-item ul li::before {
+            content: '•';
+            color: var(--accent-primary);
+            font-weight: 700;
+        }
+
+        /* ============================================
+           CONTACT
+           ============================================ */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: var(--border-radius-sm);
+            border: 1px solid var(--border-light);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
+        .contact-info-item:hover {
+            border-color: var(--accent-primary);
+        }
+        .contact-form {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--text-secondary);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--border-radius-sm);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .form-submit-btn {
+            width: 100%;
+            padding: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            background: var(--accent-primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            letter-spacing: 0.3px;
+        }
+        .form-submit-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+        .form-status {
+            padding: 0.7rem;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: center;
+            display: none;
+            margin-top: 0.8rem;
+        }
+        .form-status.success {
+            display: block;
+            background: rgba(5, 150, 105, 0.1);
+            color: var(--accent-secondary);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+        }
+        .form-status.error {
+            display: block;
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        /* ============================================
+           FAQ
+           ============================================ */
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-sm);
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            transition: all var(--transition-fast);
+        }
+        .faq-item.active {
+            border-color: var(--accent-primary);
+        }
+        .faq-question {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            user-select: none;
+            transition: all var(--transition-fast);
+        }
+        .faq-question:hover {
+            color: var(--accent-primary);
+        }
+        .faq-toggle {
+            font-size: 1.1rem;
+            transition: transform var(--transition-fast);
+            flex-shrink: 0;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+            color: var(--accent-primary);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-medium);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+        .faq-answer-inner {
+            padding: 0 1.2rem 1rem;
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            text-align: center;
+            color: #fff;
+            margin: 3rem auto;
+            max-width: 1100px;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.8rem;
+            letter-spacing: -1px;
+        }
+        .cta-section p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-section .btn {
+            background: #fff;
+            color: var(--accent-primary);
+            border-color: #fff;
+        }
+        .cta-section .btn:hover {
+            background: var(--bg-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-light);
+            padding: 3rem 5% 1.5rem;
+            margin-top: 2rem;
+        }
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .footer-section h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+        .footer-section a:hover {
+            color: var(--accent-primary);
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 0.4rem;
+        }
+        .footer-social {
+            display: flex;
+            gap: 0.6rem;
+            margin-top: 0.8rem;
+        }
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
         .footer-social a:hover {
-            background: #00ff41;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 255, 65, 0.4);
+            background: var(--accent-primary);
+            color: #fff;
+            border-color: var(--accent-primary);
         }
-
         .footer-bottom {
-            max-width: 1400px;
-            margin: 3rem auto 0;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(0, 255, 65, 0.2);
+            max-width: 1300px;
+            margin: 1.5rem auto 0;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-bottom p { color: #666; font-size: 0.9rem; }
-        .footer-bottom a { color: #00ff41; text-decoration: none; }
-        .footer-bottom a:hover { text-decoration: underline; }
-
-        .footer-tech {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .footer-tech span {
-            background: rgba(0, 255, 65, 0.1);
-            color: #00ff41;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
+            gap: 0.8rem;
             font-size: 0.8rem;
-            border: 1px solid rgba(0, 255, 65, 0.3);
+            color: var(--text-muted);
         }
 
-        /* Floating Particles */
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: #00ff41;
+        /* ============================================
+           BACK TO TOP
+           ============================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            animation: float 6s infinite;
+            background: var(--accent-primary);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: var(--z-back-to-top);
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-medium);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
         }
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) translateX(0);
-                opacity: 0;
+        /* ============================================
+           SEO DEMO SECTION
+           ============================================ */
+        .seo-demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .seo-demo-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--border-radius-sm);
+            padding: 1.2rem;
+            text-align: center;
+            transition: all var(--transition-fast);
+        }
+        .seo-demo-item:hover {
+            border-color: var(--accent-primary);
+            box-shadow: var(--shadow-sm);
+        }
+        .seo-demo-item .icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .seo-demo-item h4 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        .seo-demo-item p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
-            50% { opacity: 1; }
-            100% {
-                transform: translateY(-100vh) translateX(100px);
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
             }
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.5rem; }
-            .hero-content h2 { font-size: 1.5rem; }
-            .typing-text { font-size: 1.2rem; }
-            nav ul { flex-wrap: wrap; gap: 1rem; }
-            .cta-buttons { flex-direction: column; }
-            h2 { font-size: 2rem; }
-            .profile-image {
-                width: 140px;
-                height: 140px;
-                border-width: 4px;
+            :root {
+                --section-padding: 3.5rem 5%;
+                --card-padding: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+                letter-spacing: -1px;
+            }
+            .hero h2 {
+                font-size: 1.1rem;
+            }
+            h2.section-title {
+                font-size: 1.8rem;
+            }
+            .hero-profile-image {
+                width: 120px;
+                height: 120px;
+                border-width: 3px;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 300px;
+                height: 100vh;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                padding: 5rem 2rem 2rem;
+                gap: 1rem;
+                transition: right var(--transition-medium);
+                border-left: 1px solid var(--border-light);
+                z-index: 1001;
+                box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+                overflow-y: auto;
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .nav-cta .btn-nav {
+                display: none;
+            }
+            .nav-cta .btn-nav-solid {
+                display: inline-block;
+                padding: 0.4rem 1rem;
+                font-size: 0.75rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
             }
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            .footer-section h3::after {
-                left: 50%;
-                transform: translateX(-50%);
+            .footer-social {
+                justify-content: center;
             }
-            .footer-profile { justify-content: center; }
-            .footer-links a { justify-content: center; }
-            .footer-contact p { justify-content: center; }
-            .footer-social { justify-content: center; }
-            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            .trust-indicators {
+                gap: 1.5rem;
+            }
+            .trust-number {
+                font-size: 1.6rem;
+            }
+            .focus-list {
+                grid-template-columns: 1fr;
+            }
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+            .timeline {
+                padding-left: 1.2rem;
+            }
+            .timeline-item {
+                padding-left: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero-profile-image {
+                width: 100px;
+                height: 100px;
+            }
+            .trust-indicators {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .trust-item {
+                padding: 0;
+            }
+            .tools-grid {
+                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+                gap: 0.5rem;
+            }
+            .tool-item {
+                padding: 0.7rem;
+                font-size: 0.65rem;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="bg-animation"></div>
-    <canvas class="matrix"></canvas>
-    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
+    <!-- ============================================
+    SCROLL PROGRESS
+    ============================================ -->
+    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"></div>
+
+    <!-- ============================================
+    NAVIGATION
+    ============================================ -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-logo">AK<span>S</span>.dev</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#wordpress">WordPress</a></li>
             <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#github">GitHub</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-cta">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark mode">🌙</button>
+            <a href="#contact" class="btn-nav btn-nav-solid">Hire Me</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </nav>
 
+    <!-- ============================================
+    HERO SECTION
+    ============================================ -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <!-- PROFILE PHOTO – apni image ka naam/profile-photo.jpg rakhein -->
-            <div class="profile-image">
-                <img src="profile-photo.jpg" alt="WordPress Developer Portfolio">
+            <div class="open-to-work">
+                <span class="dot"></span> Open to Work
             </div>
 
-            <h1>YOUR NAME</h1>
-            <h2>Professional WordPress Developer | Custom Themes &amp; Plugins | Speed Optimization Expert</h2>
-            <div class="typing-text" id="typingText"></div>
+            <div class="hero-profile-image">
+                <img src="profile-photo.jpg" alt="Anup Kumar Singh - Digital Marketing Specialist" loading="eager">
+            </div>
+
+            <h1>Digital Marketing Specialist<br><span class="highlight">Focused on WordPress &amp; SEO</span></h1>
+
+            <h2>Anup Kumar Singh</h2>
+
+            <p class="hero-tagline">
+                I create fast, user-friendly WordPress websites and SEO strategies designed to improve search visibility, organic traffic and online growth.
+            </p>
+
+            <div class="hero-badges">
+                <span class="hero-badge-item">WordPress</span>
+                <span class="hero-badge-item">SEO</span>
+                <span class="hero-badge-item">Google Search Console</span>
+                <span class="hero-badge-item">Google Analytics</span>
+                <span class="hero-badge-item">Keyword Research</span>
+                <span class="hero-badge-item">Technical SEO</span>
+                <span class="hero-badge-item">Local SEO</span>
+                <span class="hero-badge-item">Content Marketing</span>
+                <span class="hero-badge-item">Social Media Marketing</span>
+                <span class="hero-badge-item">AI Marketing</span>
+            </div>
+
             <div class="cta-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn">Get In Touch</a>
-                <a href="resume.pdf" class="btn" download>Download Resume</a>
+                <a href="#projects" class="btn btn-primary">🚀 View My Work</a>
+                <a href="resume.pdf" class="btn btn-secondary" download>📄 Download Resume</a>
+                <a href="#contact" class="btn btn-outline">💼 Hire Me</a>
+            </div>
+
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-number">10+</div>
+                    <div class="trust-label">WordPress Projects</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">05+</div>
+                    <div class="trust-label">SEO Audits</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">10+</div>
+                    <div class="trust-label">Digital Marketing Projects</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">10+</div>
+                    <div class="trust-label">GitHub Projects</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">05+</div>
+                    <div class="trust-label">Certifications</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ============================================
+    ABOUT SECTION
+    ============================================ -->
     <section id="about">
-        <h2>🌐 ABOUT ME</h2>
-        <p>
-            I am a passionate <strong>WordPress Developer</strong> with over 5 years of experience in building
-            custom, high-performance websites. I specialize in turning designs into pixel-perfect, fast, and secure
-            WordPress sites that help businesses grow online.
-        </p>
-        <br>
-        <p>
-            My core skills include <strong>custom theme development, plugin customization, WooCommerce solutions,
-            Elementor / Divi page building, and website speed optimization</strong>. I also ensure that every site
-            I build is fully responsive, SEO-friendly, and easy for clients to manage.
-        </p>
-        <br>
-        <p>
-            I love solving complex website challenges and keeping up with the latest WordPress trends and
-            technologies. My goal is to deliver hassle‑free, scalable, and beautifully crafted websites that
-            exceed client expectations.
-        </p>
-    </section>
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle text-left">Digital Marketing professional specializing in WordPress & SEO.</p>
 
-    <section id="skills">
-        <h2>🛠️ MY EXPERTISE</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>🎨 WordPress Development</h3>
-                <p>Custom themes, child themes, Gutenberg blocks, Advanced Custom Fields</p>
-                <div class="skill-tags">
-                    <span class="tag">Theme Customization</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">MySQL</span>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am an <strong>aspiring Digital Marketing professional</strong> specializing in <strong>WordPress and SEO</strong>. I enjoy creating professional websites, optimizing them for search engines and developing digital marketing strategies that help businesses build a stronger online presence.
+                </p>
+                <p>
+                    My core focus is on <strong>WordPress development</strong>, <strong>SEO optimization</strong>, and <strong>digital marketing strategies</strong> that deliver measurable results. I combine technical skills with creative thinking to build websites that not only look great but also rank well on Google.
+                </p>
+                <div class="focus-list">
+                    <div class="focus-item">🎯 WordPress Development</div>
+                    <div class="focus-item">📈 SEO Optimization</div>
+                    <div class="focus-item">📊 Digital Marketing</div>
+                    <div class="focus-item">📝 Content Strategy</div>
+                    <div class="focus-item">⚡ Website Optimization</div>
+                    <div class="focus-item">📊 Google Analytics</div>
+                    <div class="focus-item">🔍 Google Search Console</div>
+                    <div class="focus-item">📍 Local SEO</div>
                 </div>
             </div>
-            <div class="skill-card">
-                <h3>🛒 E‑Commerce</h3>
-                <p>WooCommerce setup, product management, payment gateways</p>
-                <div class="skill-tags">
-                    <span class="tag">WooCommerce</span>
-                    <span class="tag">Shopify (basic)</span>
-                    <span class="tag">Stripe</span>
-                    <span class="tag">PayPal</span>
-                    <span class="tag">Shipping Plugins</span>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>📱 Page Builders</h3>
-                <p>Pixel-perfect layouts with popular drag-and-drop builders</p>
-                <div class="skill-tags">
-                    <span class="tag">Elementor Pro</span>
-                    <span class="tag">Divi</span>
-                    <span class="tag">WPBakery</span>
-                    <span class="tag">Beaver Builder</span>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>🚀 Speed & SEO</h3>
-                <p>Core Web Vitals optimization, caching, CDN, image compression</p>
-                <div class="skill-tags">
-                    <span class="tag">WP Rocket</span>
-                    <span class="tag">Perfmatters</span>
-                    <span class="tag">Yoast SEO</span>
-                    <span class="tag">Google PageSpeed</span>
-                    <span class="tag">Cloudflare</span>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>🔒 Security & Maintenance</h3>
-                <p>Malware removal, firewall setup, regular backups, SSL</p>
-                <div class="skill-tags">
-                    <span class="tag">Wordfence</span>
-                    <span class="tag">Sucuri</span>
-                    <span class="tag">SSL</span>
-                    <span class="tag">UpdraftPlus</span>
-                    <span class="tag">Site Health</span>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>🧩 Plugin Development</h3>
-                <p>Custom functionality, API integration, custom post types</p>
-                <div class="skill-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">WordPress Hooks</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag">ACF</span>
-                    <span class="tag">Git</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>📂 FEATURED PROJECTS</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>🛍️ Multi‑Vendor E‑Commerce Store</h3>
-                <p>Built a fully functional multi‑vendor marketplace using WooCommerce, Dokan, and custom theme
-                    modifications. Integrated payment split and advanced shipping.</p>
-                <div class="skill-tags">
-                    <span class="tag">WooCommerce</span>
-                    <span class="tag">Dokan</span>
-                    <span class="tag">Custom Theme</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>🏢 Corporate Business Website</h3>
-                <p>Designed and developed a professional 10‑page corporate site with Elementor Pro, dynamic
-                    content via ACF, and a blazing-fast Lighthouse score of 98.</p>
-                <div class="skill-tags">
-                    <span class="tag">Elementor Pro</span>
-                    <span class="tag">ACF</span>
-                    <span class="tag">Speed Optimization</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>📚 LMS Membership Platform</h3>
-                <p>Created an online course platform with LearnDash, membership tiers, and drip‑feed content.
-                    Custom student dashboard and integrated Zoom.</p>
-                <div class="skill-tags">
-                    <span class="tag">LearnDash</span>
-                    <span class="tag">Membership</span>
-                    <span class="tag">Zoom API</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>🎨 Portfolio for Creative Agency</h3>
-                <p>Developed a highly animated portfolio website for a design agency, featuring advanced CSS
-                    animations, custom post types, and a bold, modern UI.</p>
-                <div class="skill-tags">
-                    <span class="tag">Custom Theme</span>
-                    <span class="tag">GSAP</span>
-                    <span class="tag">Lottie</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>📰 News & Magazine Blog</h3>
-                <p>Speed‑optimized news blog with 100k+ monthly visitors. Migrated to a custom lightweight theme,
-                    reducing load time from 5s to under 1.5s.</p>
-                <div class="skill-tags">
-                    <span class="tag">Speed Optimization</span>
-                    <span class="tag">Custom Theme</span>
-                    <span class="tag">AMP</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>🔧 WordPress Troubleshooting & Fixes</h3>
-                <p>Fixed dozens of hacked sites, database errors, plugin conflicts, and White Screen of Death
-                    issues, restoring full functionality within hours.</p>
-                <div class="skill-tags">
-                    <span class="tag">Malware Removal</span>
-                    <span class="tag">Database Repair</span>
-                    <span class="tag">Debugging</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2>🎓 CERTIFICATIONS</h2>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <div class="cert-icon">📜</div>
-                <h3>WordPress Expert</h3>
-                <p>Academy Certified</p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">🏆</div>
-                <h3>Elementor Pro</h3>
-                <p>Mastery Badge</p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">⚡</div>
-                <h3>SEO Specialist</h3>
-                <p>Yoast Academy</p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">🔒</div>
-                <h3>Web Security</h3>
-                <p>Fundamentals</p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">🚀</div>
-                <h3>PageSpeed Optimization</h3>
-                <p>Google Certified</p>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">🧠</div>
-                <h3>UX/UI Principles</h3>
-                <p>for WordPress</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>📧 LET'S WORK TOGETHER</h2>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-            Need a fast, secure, and beautiful WordPress website? Let's connect!
-        </p>
-        <div class="contact-grid">
-            <a href="mailto:your.email@example.com" class="contact-item">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📧</div>
-                <h3>Email</h3>
-                <p>your.email@example.com</p>
-            </a>
-            <a href="https://www.linkedin.com/in/yourprofile" class="contact-item" target="_blank">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">💼</div>
-                <h3>LinkedIn</h3>
-                <p>Connect with me</p>
-            </a>
-            <a href="https://github.com/yourgithub" class="contact-item" target="_blank">
-                <div style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
-                <h3>GitHub</h3>
-                <p>View my work</p>
-            </a>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer>
-        <div class="footer-content">
-            <!-- About Section -->
-            <div class="footer-section footer-about">
-                <h3>About Me</h3>
-                <div class="footer-profile">
-                    <img src="profile-photo.jpg" alt="Your Name - WordPress Developer">
-                    <div class="footer-profile-info">
-                        <h4>Your Name</h4>
-                        <p>WordPress Developer</p>
+            <div>
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h3>📚 Currently Learning</h3>
+                    <div class="tag-group" style="margin-top: 0.5rem;">
+                        <span class="tag">Advanced SEO</span>
+                        <span class="tag">Technical SEO</span>
+                        <span class="tag">WordPress Development</span>
+                        <span class="tag">Google Analytics 4</span>
+                        <span class="tag">Google Tag Manager</span>
+                        <span class="tag">Content Marketing</span>
+                        <span class="tag">AI for Digital Marketing</span>
+                        <span class="tag">Conversion Rate Optimization</span>
                     </div>
                 </div>
-                <p>Delivering high‑performance WordPress solutions that make your business stand out.</p>
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h3>🎯 Target Roles</h3>
+                    <div class="tag-group" style="margin-top: 0.5rem;">
+                        <span class="tag">SEO Executive</span>
+                        <span class="tag">SEO Specialist</span>
+                        <span class="tag">Digital Marketing Executive</span>
+                        <span class="tag">Digital Marketing Specialist</span>
+                        <span class="tag">WordPress Developer</span>
+                        <span class="tag">WordPress Specialist</span>
+                        <span class="tag">Content Marketing Executive</span>
+                        <span class="tag">Digital Marketing Analyst</span>
+                        <span class="tag">SEO Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SPECIALIZATION SECTION
+    ============================================ -->
+    <section id="specialization">
+        <span class="section-label">My Specialization</span>
+        <h2 class="section-title">What I Excel At</h2>
+        <p class="section-subtitle">Three core pillars that define my professional expertise.</p>
+
+        <div class="pillars-grid">
+            <div class="pillar-card wordpress-pillar">
+                <span class="pillar-number">01</span>
+                <span class="pillar-icon">🖥️</span>
+                <h3>WORDPRESS</h3>
+                <ul>
+                    <li>Professional Responsive Websites</li>
+                    <li>Business Websites</li>
+                    <li>Landing Pages</li>
+                    <li>Blog Websites</li>
+                    <li>WooCommerce</li>
+                    <li>Website Maintenance</li>
+                    <li>Speed Optimization</li>
+                    <li>Security Basics</li>
+                    <li>SEO-friendly Architecture</li>
+                </ul>
+            </div>
+            <div class="pillar-card seo-pillar">
+                <span class="pillar-number">02</span>
+                <span class="pillar-icon">📈</span>
+                <h3>SEO</h3>
+                <ul>
+                    <li>Keyword Research</li>
+                    <li>On-Page SEO</li>
+                    <li>Technical SEO</li>
+                    <li>Local SEO</li>
+                    <li>Content Optimization</li>
+                    <li>Internal Linking</li>
+                    <li>Schema Markup</li>
+                    <li>Sitemap &amp; Robots.txt</li>
+                    <li>Core Web Vitals</li>
+                    <li>Google Search Console</li>
+                    <li>Google Analytics</li>
+                    <li>SEO Audits</li>
+                </ul>
+            </div>
+            <div class="pillar-card marketing-pillar">
+                <span class="pillar-number">03</span>
+                <span class="pillar-icon">📊</span>
+                <h3>DIGITAL MARKETING</h3>
+                <ul>
+                    <li>Content Marketing</li>
+                    <li>Social Media Marketing</li>
+                    <li>Email Marketing</li>
+                    <li>Lead Generation</li>
+                    <li>Marketing Funnel</li>
+                    <li>Competitor Research</li>
+                    <li>Content Strategy</li>
+                    <li>Analytics &amp; Reporting</li>
+                    <li>AI Marketing Tools</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SKILLS SECTION
+    ============================================ -->
+    <section id="skills">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Professional Skills</h2>
+        <p class="section-subtitle">Categorized skills across WordPress, SEO, Digital Marketing, Analytics and Tools.</p>
+
+        <div class="grid-4" style="margin-bottom: 1.5rem;">
+            <div class="card">
+                <span class="card-icon">🖥️</span>
+                <h3>WordPress</h3>
+                <div class="tag-group">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Elementor</span>
+                    <span class="tag">Gutenberg</span>
+                    <span class="tag">WooCommerce</span>
+                    <span class="tag">Themes</span>
+                    <span class="tag">Plugins</span>
+                    <span class="tag">Custom Pages</span>
+                    <span class="tag">Landing Pages</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Maintenance</span>
+                    <span class="tag">Security Basics</span>
+                    <span class="tag">Speed Optimization</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">🔍</span>
+                <h3>SEO</h3>
+                <div class="tag-group">
+                    <span class="tag">Keyword Research</span>
+                    <span class="tag">Keyword Mapping</span>
+                    <span class="tag">On-Page SEO</span>
+                    <span class="tag">Technical SEO</span>
+                    <span class="tag">Local SEO</span>
+                    <span class="tag">Off-Page SEO</span>
+                    <span class="tag">Internal Linking</span>
+                    <span class="tag">Image SEO</span>
+                    <span class="tag">Schema Markup</span>
+                    <span class="tag">XML Sitemap</span>
+                    <span class="tag">Robots.txt</span>
+                    <span class="tag">Canonical Tags</span>
+                    <span class="tag">Meta Tags</span>
+                    <span class="tag">Core Web Vitals</span>
+                    <span class="tag">SEO Audit</span>
+                    <span class="tag">Google Search Console</span>
+                    <span class="tag">Google Analytics 4</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon">📣</span>
+                <h3>Digital Marketing</h3>
+                <div class="tag-group">
+                    <span class="tag">Content Marketing</span>
+                    <span class="tag">Social Media Marketing</span>
+                    <span class="tag">Email Marketing</span>
+                    <span class="tag">Lead Generation</span>
+                    <span class="tag">Marketing Funnel</span>
+                    <span class="tag">Buyer Persona</span>
+                    <span class="tag">Competitor Analysis</span>
+                    <span class="tag">Market Research</span>
+                    <span class="tag">Conversion Optimization</span>
+                    <span class="tag">Campaign Planning</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">📊</span>
+                <h3>Analytics</h3>
+                <div class="tag-group">
+                    <span class="tag">Google Analytics</span>
+                    <span class="tag">Google Search Console</span>
+                    <span class="tag">Looker Studio</span>
+                    <span class="tag">Google Tag Manager</span>
+                    <span class="tag">Excel / Google Sheets</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">🛠️</span>
+                <h3>Tools</h3>
+                <div class="tag-group">
+                    <span class="tag">Google Search Console</span>
+                    <span class="tag">Google Analytics</span>
+                    <span class="tag">Google Keyword Planner</span>
+                    <span class="tag">Google Trends</span>
+                    <span class="tag">Google Business Profile</span>
+                    <span class="tag">Rank Math</span>
+                    <span class="tag">Yoast SEO</span>
+                    <span class="tag">Screaming Frog</span>
+                    <span class="tag">Semrush</span>
+                    <span class="tag">Ahrefs</span>
+                    <span class="tag">Canva</span>
+                    <span class="tag">ChatGPT</span>
+                    <span class="tag">AI Marketing Tools</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    TOOLS SECTION
+    ============================================ -->
+    <section id="tools">
+        <span class="section-label">Tools & Technologies</span>
+        <h2 class="section-title">Tools I Work With</h2>
+        <p class="section-subtitle">Professional tools and platforms I use for WordPress development, SEO and digital marketing.</p>
+
+        <div class="tools-grid">
+            <div class="tool-item"><span class="tool-icon">🖥️</span>WordPress</div>
+            <div class="tool-item"><span class="tool-icon">📐</span>Elementor</div>
+            <div class="tool-item"><span class="tool-icon">🛒</span>WooCommerce</div>
+            <div class="tool-item"><span class="tool-icon">🔍</span>Rank Math</div>
+            <div class="tool-item"><span class="tool-icon">📊</span>Google Search Console</div>
+            <div class="tool-item"><span class="tool-icon">📈</span>Google Analytics</div>
+            <div class="tool-item"><span class="tool-icon">🏷️</span>Google Tag Manager</div>
+            <div class="tool-item"><span class="tool-icon">📉</span>Google Trends</div>
+            <div class="tool-item"><span class="tool-icon">🔑</span>Google Keyword Planner</div>
+            <div class="tool-item"><span class="tool-icon">📊</span>Semrush</div>
+            <div class="tool-item"><span class="tool-icon">🔍</span>Ahrefs</div>
+            <div class="tool-item"><span class="tool-icon">🕷️</span>Screaming Frog</div>
+            <div class="tool-item"><span class="tool-icon">🎨</span>Canva</div>
+            <div class="tool-item"><span class="tool-icon">💻</span>GitHub</div>
+            <div class="tool-item"><span class="tool-icon">🤖</span>ChatGPT</div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SERVICES SECTION
+    ============================================ -->
+    <section id="services">
+        <span class="section-label">Services</span>
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-subtitle">Professional WordPress, SEO and Digital Marketing services.</p>
+
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon">🖥️</span>
+                <h3>WordPress Website Development</h3>
+                <p>Business, Landing, Portfolio, Blog, and WooCommerce websites with responsive design, security, and speed optimization.</p>
+                <div class="tag-group">
+                    <span class="tag">Business Website</span>
+                    <span class="tag">Landing Page</span>
+                    <span class="tag">Portfolio Website</span>
+                    <span class="tag">Blog Website</span>
+                    <span class="tag">WooCommerce</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Security</span>
+                    <span class="tag">Speed Optimization</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">📈</span>
+                <h3>SEO Services</h3>
+                <p>SEO strategies designed to improve search visibility and organic growth. Comprehensive audits, on-page and technical SEO, local SEO, and reporting.</p>
+                <div class="tag-group">
+                    <span class="tag">SEO Audit</span>
+                    <span class="tag">Keyword Research</span>
+                    <span class="tag">On-Page SEO</span>
+                    <span class="tag">Technical SEO</span>
+                    <span class="tag">Local SEO</span>
+                    <span class="tag">Internal Linking</span>
+                    <span class="tag">Meta Optimization</span>
+                    <span class="tag">Schema</span>
+                    <span class="tag">Search Console Setup</span>
+                    <span class="tag">Analytics Setup</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">📣</span>
+                <h3>Digital Marketing</h3>
+                <p>Content strategy, social media planning, lead generation, email marketing, and analytics-driven campaigns.</p>
+                <div class="tag-group">
+                    <span class="tag">Content Strategy</span>
+                    <span class="tag">Social Media Strategy</span>
+                    <span class="tag">Content Calendar</span>
+                    <span class="tag">Competitor Research</span>
+                    <span class="tag">Marketing Funnel</span>
+                    <span class="tag">Lead Generation</span>
+                    <span class="tag">Email Marketing</span>
+                    <span class="tag">Analytics &amp; Reporting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    PROJECTS SECTION
+    ============================================ -->
+    <section id="projects">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of WordPress, SEO and Digital Marketing projects.</p>
+
+        <div class="grid-3">
+            <div class="project-card">
+                <div class="project-image">🏢</div>
+                <div class="project-body">
+                    <span class="project-category">WordPress Development</span>
+                    <h3>Business WordPress Website</h3>
+                    <p>Designed and developed a responsive WordPress business website with SEO-friendly structure, optimized content and conversion-focused pages.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">Rank Math</span>
+                        <span class="tag">Search Console</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🌐 Live Demo →</a>
+                        <a href="#" class="project-link">📂 GitHub →</a>
+                        <a href="#" class="project-link">📋 Case Study →</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Quick Links -->
-            <div class="footer-section footer-links">
-                <h3>Quick Links</h3>
+            <div class="project-card">
+                <div class="project-image">📈</div>
+                <div class="project-body">
+                    <span class="project-category">SEO</span>
+                    <h3>SEO Audit &amp; Optimization</h3>
+                    <p>Comprehensive technical SEO audit, keyword research, competitor analysis, on-page optimization, and internal linking strategy.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">Technical SEO Audit</span>
+                        <span class="tag">Keyword Research</span>
+                        <span class="tag">On-Page SEO</span>
+                        <span class="tag">Schema</span>
+                        <span class="tag">Page Speed</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">📊 Report →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📍</div>
+                <div class="project-body">
+                    <span class="project-category">Local SEO</span>
+                    <h3>Local Business SEO Project</h3>
+                    <p>Google Business Profile optimization, local keyword research, citations, on-page optimization, and review strategy for a local business.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">Google Business Profile</span>
+                        <span class="tag">Local Keywords</span>
+                        <span class="tag">Citations</span>
+                        <span class="tag">Local Schema</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">📋 Case Study →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📝</div>
+                <div class="project-body">
+                    <span class="project-category">WordPress + SEO</span>
+                    <h3>SEO-Friendly Blog Website</h3>
+                    <p>Built with SEO-friendly architecture, categories, internal linking, content strategy, schema, sitemap, and Search Console integration.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">SEO Architecture</span>
+                        <span class="tag">Schema</span>
+                        <span class="tag">Sitemap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                        <a href="#" class="project-link">📂 GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📣</div>
+                <div class="project-body">
+                    <span class="project-category">Digital Marketing</span>
+                    <h3>Digital Marketing Campaign</h3>
+                    <p>Full-funnel campaign with buyer persona research, content strategy, social media, landing page, lead generation, and analytics.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">Campaign Strategy</span>
+                        <span class="tag">Content Marketing</span>
+                        <span class="tag">Lead Generation</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">📋 Results →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-body">
+                    <span class="project-category">WordPress / SEO</span>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Responsive WordPress portfolio with technical SEO, on-page optimization, performance optimization, and analytics setup.</p>
+                    <div class="tag-group" style="margin-bottom: 0.5rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Technical SEO</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                        <a href="#" class="project-link">📂 GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    WORDPRESS PORTFOLIO SECTION
+    ============================================ -->
+    <section id="wordpress">
+        <span class="section-label">WordPress Portfolio</span>
+        <h2 class="section-title">WordPress Websites</h2>
+        <p class="section-subtitle">Websites I have built and optimized with WordPress.</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="blog">Blog</button>
+            <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            <button class="filter-btn" data-filter="landing">Landing Page</button>
+            <button class="filter-btn" data-filter="woocommerce">WooCommerce</button>
+        </div>
+
+        <div class="grid-3" id="wordpressGrid">
+            <div class="project-card" data-category="business">
+                <div class="project-image">🏢</div>
+                <div class="project-body">
+                    <span class="project-category">Business Website</span>
+                    <h3>Corporate Business Site</h3>
+                    <p>Professional business website with custom theme, SEO setup, speed optimization, and responsive design.</p>
+                    <div class="tag-group">
+                        <span class="tag">Elementor</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Speed Optimized</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="blog">
+                <div class="project-image">📰</div>
+                <div class="project-body">
+                    <span class="project-category">Blog Website</span>
+                    <h3>SEO Blog Platform</h3>
+                    <p>Fast-loading blog with optimized categories, internal linking, schema, and content strategy.</p>
+                    <div class="tag-group">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Schema</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="portfolio">
+                <div class="project-image">🎨</div>
+                <div class="project-body">
+                    <span class="project-category">Portfolio</span>
+                    <h3>Creative Portfolio</h3>
+                    <p>Portfolio website with custom post types, responsive design, and on-page SEO optimization.</p>
+                    <div class="tag-group">
+                        <span class="tag">Custom Theme</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="landing">
+                <div class="project-image">🎯</div>
+                <div class="project-body">
+                    <span class="project-category">Landing Page</span>
+                    <h3>Conversion Landing Page</h3>
+                    <p>High-converting landing page with optimized CTA, speed optimization, and A/B testing setup.</p>
+                    <div class="tag-group">
+                        <span class="tag">Elementor</span>
+                        <span class="tag">CTA</span>
+                        <span class="tag">Speed</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="woocommerce">
+                <div class="project-image">🛒</div>
+                <div class="project-body">
+                    <span class="project-category">WooCommerce</span>
+                    <h3>E-Commerce Store</h3>
+                    <p>WooCommerce store with product schema, optimized categories, and SEO-friendly architecture.</p>
+                    <div class="tag-group">
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">Schema</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="business">
+                <div class="project-image">🏪</div>
+                <div class="project-body">
+                    <span class="project-category">Business Website</span>
+                    <h3>Local Business Website</h3>
+                    <p>Local business website with Google Business Profile integration and local SEO optimization.</p>
+                    <div class="tag-group">
+                        <span class="tag">Local SEO</span>
+                        <span class="tag">GBP</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 0.6rem;">
+                        <a href="#" class="project-link">🌐 Live →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CERTIFICATIONS SECTION
+    ============================================ -->
+    <section id="certifications">
+        <span class="section-label">Certifications</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional certifications and credentials.</p>
+
+        <div class="grid-3">
+            <div class="card">
+                <span class="card-icon">📜</span>
+                <h3>Google Analytics Certification</h3>
+                <p>Google Analytics Individual Qualification (GAIQ)</p>
+                <div class="tag-group">
+                    <span class="tag">Google</span>
+                    <span class="tag">Analytics</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">🏆</span>
+                <h3>SEO Certification</h3>
+                <p>Professional SEO Certification - On-Page, Technical, and Local SEO</p>
+                <div class="tag-group">
+                    <span class="tag">SEO</span>
+                    <span class="tag">Digital Marketing</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">🔍</span>
+                <h3>WordPress Certification</h3>
+                <p>WordPress Development & Website Management Certification</p>
+                <div class="tag-group">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Web Development</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">📊</span>
+                <h3>Semrush Certification</h3>
+                <p>Semrush SEO Toolkit Certification</p>
+                <div class="tag-group">
+                    <span class="tag">Semrush</span>
+                    <span class="tag">SEO Tools</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-icon">📣</span>
+                <h3>Digital Marketing Certification</h3>
+                <p>Comprehensive Digital Marketing Fundamentals Certification</p>
+                <div class="tag-group">
+                    <span class="tag">Digital Marketing</span>
+                    <span class="tag">Content</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    EXPERIENCE SECTION
+    ============================================ -->
+    <section id="experience">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Experience &amp; Practical Work</h2>
+        <p class="section-subtitle">Professional journey and practical experience.</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Freelance WordPress Developer &amp; SEO Specialist</h3>
+                <div class="timeline-company">Self-Employed / Freelance</div>
+                <div class="timeline-date">2023 - Present</div>
                 <ul>
+                    <li>Developed and optimized WordPress websites for small businesses and individuals</li>
+                    <li>Conducted SEO audits and implemented on-page and technical SEO improvements</li>
+                    <li>Managed Google Search Console and Google Analytics for client websites</li>
+                    <li>Created content strategies and optimized existing content for better rankings</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Practical Projects &amp; Portfolio Work</h3>
+                <div class="timeline-company">Self-Initiated</div>
+                <div class="timeline-date">2022 - Present</div>
+                <ul>
+                    <li>Built 10+ WordPress websites including business, blog, portfolio, and landing pages</li>
+                    <li>Completed 5+ SEO audits and optimization projects</li>
+                    <li>Created digital marketing campaigns with content and social media strategies</li>
+                    <li>Documented projects on GitHub for professional showcase</li>
+                    <li>Continuous learning through online courses and certifications</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    GITHUB SECTION
+    ============================================ -->
+    <section id="github">
+        <span class="section-label">GitHub</span>
+        <h2 class="section-title">Build. Document. Learn.</h2>
+        <p class="section-subtitle">I use GitHub to document my projects, experiments, website work and technical learning.</p>
+
+        <div class="card" style="text-align: center; padding: 2.5rem;">
+            <span class="card-icon" style="font-size: 3rem;">💻</span>
+            <h3 style="font-size: 1.3rem;">Explore My GitHub</h3>
+            <p style="max-width: 600px; margin: 0.5rem auto 1.5rem;">
+                My GitHub profile showcases website code, SEO documentation, marketing projects, scripts, tools, case studies and learning projects.
+            </p>
+            <div class="cta-buttons" style="margin-top: 1rem;">
+                <a href="https://github.com/anupkumarsingh" target="_blank" class="btn btn-primary">💻 View GitHub Profile</a>
+                <a href="https://github.com/anupkumarsingh?tab=repositories" target="_blank" class="btn btn-secondary">📂 View Repositories</a>
+            </div>
+            <div class="tag-group" style="justify-content: center; margin-top: 1.5rem;">
+                <span class="tag">Website Code</span>
+                <span class="tag">SEO Documentation</span>
+                <span class="tag">Marketing Projects</span>
+                <span class="tag">Scripts &amp; Tools</span>
+                <span class="tag">Case Studies</span>
+                <span class="tag">Learning Projects</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    BLOG SECTION
+    ============================================ -->
+    <section id="blog">
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Latest Insights</h2>
+        <p class="section-subtitle">SEO-friendly articles and tutorials on WordPress, SEO and Digital Marketing.</p>
+
+        <div class="grid-3">
+            <div class="card">
+                <h3 style="font-size: 1rem;">Complete WordPress SEO Checklist</h3>
+                <p style="font-size: 0.85rem;">A step-by-step guide to optimizing your WordPress website for search engines.</p>
+                <div class="tag-group">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Tutorial</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1rem;">How to Perform a Technical SEO Audit</h3>
+                <p style="font-size: 0.85rem;">Learn the essential steps to conduct a comprehensive technical SEO audit.</p>
+                <div class="tag-group">
+                    <span class="tag">Technical SEO</span>
+                    <span class="tag">Audit</span>
+                    <span class="tag">Guide</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1rem;">WordPress Speed Optimization Guide</h3>
+                <p style="font-size: 0.85rem;">Improve your WordPress website speed and Core Web Vitals for better rankings.</p>
+                <div class="tag-group">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Speed</span>
+                    <span class="tag">Core Web Vitals</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1rem;">Keyword Research for Beginners</h3>
+                <p style="font-size: 0.85rem;">A beginner-friendly guide to finding the right keywords for your content.</p>
+                <div class="tag-group">
+                    <span class="tag">Keyword Research</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Beginner</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1rem;">How to Set Up Google Search Console</h3>
+                <p style="font-size: 0.85rem;">Step-by-step instructions for setting up and using Google Search Console effectively.</p>
+                <div class="tag-group">
+                    <span class="tag">Search Console</span>
+                    <span class="tag">Google</span>
+                    <span class="tag">Tutorial</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="font-size: 1rem;">Local SEO for Small Businesses</h3>
+                <p style="font-size: 0.85rem;">Practical strategies to improve local search visibility for small businesses.</p>
+                <div class="tag-group">
+                    <span class="tag">Local SEO</span>
+                    <span class="tag">Small Business</span>
+                    <span class="tag">Strategy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SEO DEMO SECTION
+    ============================================ -->
+    <section id="seo-demo">
+        <span class="section-label">SEO Demonstration</span>
+        <h2 class="section-title">SEO-Optimized by Design</h2>
+        <p class="section-subtitle">This portfolio demonstrates my SEO knowledge through its own implementation.</p>
+
+        <div class="seo-demo-grid">
+            <div class="seo-demo-item">
+                <span class="icon">🔍</span>
+                <h4>Technical SEO</h4>
+                <p>Semantic HTML, clean structure</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">📝</span>
+                <h4>On-Page SEO</h4>
+                <p>Optimized meta tags, headings</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">📊</span>
+                <h4>Structured Data</h4>
+                <p>Person &amp; WebSite schema</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">⚡</span>
+                <h4>Performance</h4>
+                <p>Fast loading, optimized assets</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">♿</span>
+                <h4>Accessibility</h4>
+                <p>ARIA labels, semantic markup</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">📱</span>
+                <h4>Mobile Optimization</h4>
+                <p>Responsive, mobile-first design</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">🔗</span>
+                <h4>Internal Linking</h4>
+                <p>Strategic section connections</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">🗺️</span>
+                <h4>Sitemap</h4>
+                <p>XML sitemap for indexing</p>
+            </div>
+            <div class="seo-demo-item">
+                <span class="icon">🤖</span>
+                <h4>Robots.txt</h4>
+                <p>Proper crawler directives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CTA SECTION
+    ============================================ -->
+    <div class="cta-section" id="cta">
+        <h2>Let's Improve Your Online Presence</h2>
+        <p>Need a WordPress website? Want an SEO audit? Looking for a Digital Marketing professional? Let's work together to achieve your goals.</p>
+        <a href="#contact" class="btn btn-primary">💼 Get In Touch</a>
+    </div>
+
+    <!-- ============================================
+    FAQ SECTION
+    ============================================ -->
+    <section id="faq">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions.</p>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What services do you offer?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        I offer WordPress website development, SEO services (audit, on-page, technical, local), and digital marketing services including content strategy, social media planning, and lead generation.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How long does it take to build a WordPress website?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        A basic WordPress website typically takes 1-2 weeks, while a complex custom project may take 4-8 weeks depending on the requirements.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you provide ongoing SEO services?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Yes, I offer ongoing SEO services including monthly audits, content optimization, technical fixes, and performance reporting to continuously improve search visibility.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can you fix my existing website's SEO issues?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Absolutely! I perform comprehensive SEO audits and fix technical issues like slow speed, missing meta tags, duplicate content, and poor site structure.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    RESUME SECTION
+    ============================================ -->
+    <section id="resume">
+        <span class="section-label">Resume</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Explore my resume to learn more about my skills, projects, education and practical experience.</p>
+
+        <div style="text-align: center;">
+            <div class="cta-buttons" style="justify-content: center;">
+                <a href="resume.pdf" class="btn btn-primary" download>📄 Download Resume</a>
+                <a href="resume.pdf" class="btn btn-secondary" target="_blank">👁️ View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CONTACT SECTION
+    ============================================ -->
+    <section id="contact">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's discuss how I can help you grow your online presence.</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-list">
+                <div class="contact-info-item">
+                    <span style="font-size: 1.3rem;">📧</span>
+                    <span>anup@example.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <span style="font-size: 1.3rem;">📍</span>
+                    <span>India / Remote (Worldwide)</span>
+                </div>
+                <div class="contact-info-item">
+                    <span style="font-size: 1.3rem;">💼</span>
+                    <span>Available for Freelance &amp; Full-time</span>
+                </div>
+                <div class="contact-info-item">
+                    <span style="font-size: 1.3rem;">⚡</span>
+                    <span>Response within 24 hours</span>
+                </div>
+                <div style="display: flex; gap: 0.8rem; margin-top: 0.5rem;">
+                    <a href="https://www.linkedin.com/in/anupkumarsingh" target="_blank"
+                        style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--text-secondary); transition: all var(--transition-fast);">💼</a>
+                    <a href="https://github.com/anupkumarsingh" target="_blank"
+                        style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--text-secondary); transition: all var(--transition-fast);">💻</a>
+                    <a href="mailto:anup@example.com"
+                        style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--text-secondary); transition: all var(--transition-fast);">📧</a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Email Address *</label>
+                        <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="formSubject">Subject *</label>
+                    <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry" required>
+                </div>
+                <div class="form-group">
+                    <label for="formType">Project Type</label>
+                    <select id="formType" name="projectType">
+                        <option value="">Select project type...</option>
+                        <option value="wordpress">WordPress Website</option>
+                        <option value="seo">SEO</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="local-seo">Local SEO</option>
+                        <option value="website-optimization">Website Optimization</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formBudget">Budget (Optional)</label>
+                    <select id="formBudget" name="budget">
+                        <option value="">Select budget range...</option>
+                        <option value="under-500">Under $500</option>
+                        <option value="500-1000">$500 - $1,000</option>
+                        <option value="1000-3000">$1,000 - $3,000</option>
+                        <option value="3000-5000">$3,000 - $5,000</option>
+                        <option value="5000-plus">$5,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formMessage">Message *</label>
+                    <textarea id="formMessage" name="message" placeholder="Tell me about your project, timeline, and goals..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">Send Message 🚀</button>
+                <div class="form-status" id="formStatus"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Anup Kumar Singh</h3>
+                <p>Digital Marketing Specialist<br>WordPress Developer &amp; SEO Expert</p>
+                <p style="margin-top: 0.5rem;">Building fast, SEO-optimized WordPress websites and digital marketing strategies that drive online growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#wordpress">WordPress</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
-            <!-- Contact Info -->
-            <div class="footer-section footer-contact">
+            <div class="footer-section">
                 <h3>Get In Touch</h3>
-                <p><span>📧</span> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p><span>📍</span> India / Remote</p>
-                <p><span>💼</span> Available for Freelance</p>
-
+                <p>📧 anup@example.com</p>
+                <p>📍 India / Remote</p>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">💼</a>
-                    <a href="https://github.com/yourgithub" target="_blank" title="GitHub">💻</a>
-                    <a href="mailto:your.email@example.com" title="Email">📧</a>
+                    <a href="https://www.linkedin.com/in/anupkumarsingh" target="_blank" title="LinkedIn" aria-label="LinkedIn">💼</a>
+                    <a href="https://github.com/anupkumarsingh" target="_blank" title="GitHub" aria-label="GitHub">💻</a>
+                    <a href="mailto:anup@example.com" title="Email" aria-label="Email">📧</a>
                 </div>
             </div>
         </div>
-
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <p>© 2024 <a href="#home">Your Name</a>. All Rights Reserved.</p>
-            <div class="footer-tech">
-                <span>WordPress Expert</span>
-                <span>WooCommerce</span>
-                <span>Elementor Pro</span>
-            </div>
-            <p>Built with 💚 | Ready for <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+            <p>© 2024 Anup Kumar Singh. All Rights Reserved.</p>
+            <p>Built with 💙 | WordPress &amp; SEO Optimized</p>
         </div>
     </footer>
 
+    <!-- ============================================
+    BACK TO TOP
+    ============================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
     <script>
-        // Typing Animation
-        const texts = [
-            "Custom WordPress Theme Development",
-            "WooCommerce & E‑Commerce Solutions",
-            "Lightning‑Fast Site Speed Optimization",
-            "Responsive & SEO‑Friendly Websites",
-            "WordPress Troubleshooting & Malware Removal"
-        ];
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typingSpeed = 100;
-        const deletingSpeed = 50;
-        const pauseTime = 2000;
+        (function() {
+            'use strict';
 
-        function typeText() {
-            const currentText = texts[textIndex];
-            const displayText = isDeleting ?
-                currentText.substring(0, charIndex - 1) :
-                currentText.substring(0, charIndex + 1);
+            // ============================================
+            // THEME TOGGLE (Dark/Light Mode)
+            // ============================================
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            let currentTheme = 'light';
 
-            document.getElementById('typingText').innerHTML = displayText + '<span class="cursor">|</span>';
-
-            if (!isDeleting && charIndex === currentText.length) {
-                setTimeout(() => isDeleting = true, pauseTime);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            if (savedTheme) {
+                currentTheme = savedTheme;
+                body.setAttribute('data-theme', currentTheme);
+                themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
             }
 
-            charIndex = isDeleting ? charIndex - 1 : charIndex + 1;
-            setTimeout(typeText, isDeleting ? deletingSpeed : typingSpeed);
-        }
+            themeToggle.addEventListener('click', () => {
+                currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                body.setAttribute('data-theme', currentTheme);
+                themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+                localStorage.setItem('portfolio-theme', currentTheme);
+            });
 
-        typeText();
+            // ============================================
+            // MOBILE NAVIGATION
+            // ============================================
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
 
-        // Matrix Rain Effect
-        const canvas = document.querySelector('.matrix');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+            });
 
-        const chars = '01';
-        const fontSize = 14;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
 
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#00ff41';
-            ctx.font = fontSize + 'px monospace';
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = chars[Math.floor(Math.random() * chars.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 50);
-
-        // Scroll Progress
-        window.addEventListener('scroll', () => {
-            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-            document.getElementById('scrollProgress').style.width = scrolled + '%';
-        });
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
                 }
             });
-        });
 
-        // Floating Particles
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 6 + 's';
-            document.querySelector('.hero').appendChild(particle);
-            setTimeout(() => particle.remove(), 6000);
-        }
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
 
-        setInterval(createParticle, 300);
+            // ============================================
+            // ACTIVE NAV LINK ON SCROLL
+            // ============================================
+            const sections = document.querySelectorAll('section[id]');
+            const navAnchors = document.querySelectorAll('.nav-links a');
 
-        // Resize canvas on window resize
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
+            function updateActiveLink() {
+                const scrollPos = window.scrollY + 120;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        const id = section.getAttribute('id');
+                        navAnchors.forEach(anchor => {
+                            anchor.classList.remove('active');
+                            if (anchor.getAttribute('href') === '#' + id) {
+                                anchor.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }
+
+            // ============================================
+            // NAVBAR SCROLL EFFECT
+            // ============================================
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+                updateActiveLink();
+            });
+
+            // ============================================
+            // SCROLL PROGRESS
+            // ============================================
+            const scrollProgress = document.getElementById('scrollProgress');
+            function updateScrollProgress() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                scrollProgress.style.width = (scrollTop / docHeight) * 100 + '%';
+            }
+            window.addEventListener('scroll', updateScrollProgress);
+            window.addEventListener('resize', updateScrollProgress);
+            updateScrollProgress();
+
+            // ============================================
+            // BACK TO TOP
+            // ============================================
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 400);
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ============================================
+            // SMOOTH SCROLL FOR ANCHOR LINKS
+            // ============================================
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = navbar.offsetHeight;
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ============================================
+            // WORDPRESS FILTER
+            // ============================================
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const wordpressCards = document.querySelectorAll('#wordpressGrid .project-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.getAttribute('data-filter');
+                    wordpressCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // ============================================
+            // FAQ ACCORDION
+            // ============================================
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                    });
+                    if (!isActive) {
+                        item.classList.add('active');
+                        const answer = item.querySelector('.faq-answer');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // ============================================
+            // CONTACT FORM HANDLING
+            // ============================================
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('formName').value.trim();
+                const email = document.getElementById('formEmail').value.trim();
+                const subject = document.getElementById('formSubject').value.trim();
+                const message = document.getElementById('formMessage').value.trim();
+
+                if (!name || !email || !subject || !message) {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = '⚠️ Please fill in all required fields.';
+                    return;
+                }
+                if (!email.includes('@') || !email.includes('.')) {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = '⚠️ Please enter a valid email address.';
+                    return;
+                }
+
+                formStatus.className = 'form-status success';
+                formStatus.textContent = '✅ Thank you for your message! I\'ll get back to you within 24 hours.';
+                contactForm.reset();
+                setTimeout(() => {
+                    formStatus.className = 'form-status';
+                    formStatus.textContent = '';
+                }, 5000);
+            });
+
+            // ============================================
+            // INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
+            // ============================================
+            const animateElements = document.querySelectorAll(
+                '.card, .project-card, .pillar-card, .tool-item, .timeline-item, .seo-demo-item, .contact-info-item'
+            );
+            const elementObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        elementObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                elementObserver.observe(el);
+            });
+
+            console.log('%c🚀 Portfolio Loaded Successfully!', 'color: #2563eb; font-size: 16px; font-weight: bold;');
+            console.log('%cBuilt with 💙 by Anup Kumar Singh - Digital Marketing | WordPress & SEO Specialist', 'color: #059669; font-size: 12px;');
+        })();
     </script>
 </body>
+
 </html>
