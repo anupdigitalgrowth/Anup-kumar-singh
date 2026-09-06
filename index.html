@@ -19,7 +19,7 @@
     <meta property="og:description"
         content="Digital Marketing professional specializing in WordPress, SEO and digital growth. Explore projects, SEO case studies and professional experience.">
     <meta property="og:url" content="https://anupkumarsingh.github.io/">
-    <meta property="og:image" content="https://anupkumarsingh.github.io/images/og-image.jpg">
+    <meta property="og:image" content="https://i.ibb.co/LXLVhsvS/profile-photo.jpg">
     <meta property="og:site_name" content="Anup Kumar Singh Portfolio">
 
     <!-- Twitter Card -->
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="Anup Kumar Singh | Digital Marketing | WordPress & SEO Specialist">
     <meta name="twitter:description"
         content="Digital Marketing professional specializing in WordPress, SEO and digital growth.">
-    <meta name="twitter:image" content="https://anupkumarsingh.github.io/images/og-image.jpg">
+    <meta name="twitter:image" content="https://i.ibb.co/LXLVhsvS/profile-photo.jpg">
 
     <title>Anup Kumar Singh | Digital Marketing | WordPress & SEO Specialist</title>
 
@@ -45,6 +45,7 @@
             "jobTitle": "Digital Marketing Specialist | WordPress & SEO",
             "url": "https://anupkumarsingh.github.io/",
             "email": "anup@example.com",
+            "image": "https://i.ibb.co/LXLVhsvS/profile-photo.jpg",
             "knowsAbout": ["Digital Marketing", "WordPress", "SEO", "Content Marketing", "Google Analytics", "Google Search Console"],
             "sameAs": [
                 "https://www.linkedin.com/in/anupkumarsingh",
@@ -1552,7 +1553,8 @@
     NAVIGATION
     ============================================ -->
     <nav id="navbar" role="navigation" aria-label="Main navigation">
-        <a href="#home" class="nav-logo">AK<span>S</span>.dev</a>
+        <!-- UPDATED: Site name changed from AKS.dev to Anup Kumar Singh -->
+        <a href="#home" class="nav-logo">Anup Kumar <span>Singh</span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -1584,7 +1586,7 @@
             </div>
 
             <div class="hero-profile-image">
-                <img src="profile-photo.jpg" alt="Anup Kumar Singh - Digital Marketing Specialist" loading="eager">
+                <img src="https://i.ibb.co/LXLVhsvS/profile-photo.jpg" alt="Anup Kumar Singh - Digital Marketing Specialist" loading="eager" onerror="this.src='https://via.placeholder.com/160x160/2563eb/ffffff?text=AKS'">
             </div>
 
             <h1>Digital Marketing Specialist<br><span class="highlight">Focused on WordPress &amp; SEO</span></h1>
@@ -2654,20 +2656,16 @@
         (function() {
             'use strict';
 
-            // ============================================
-            // THEME TOGGLE (Dark/Light Mode)
-            // ============================================
+            // Theme toggle
             const themeToggle = document.getElementById('themeToggle');
             const body = document.body;
             let currentTheme = 'light';
-
             const savedTheme = localStorage.getItem('portfolio-theme');
             if (savedTheme) {
                 currentTheme = savedTheme;
                 body.setAttribute('data-theme', currentTheme);
                 themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
             }
-
             themeToggle.addEventListener('click', () => {
                 currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
                 body.setAttribute('data-theme', currentTheme);
@@ -2675,18 +2673,14 @@
                 localStorage.setItem('portfolio-theme', currentTheme);
             });
 
-            // ============================================
-            // MOBILE NAVIGATION
-            // ============================================
+            // Mobile navigation
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('navLinks');
-
             hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('active');
                 navLinks.classList.toggle('open');
                 hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
             });
-
             navLinks.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     hamburger.classList.remove('active');
@@ -2694,7 +2688,6 @@
                     hamburger.setAttribute('aria-expanded', 'false');
                 });
             });
-
             window.addEventListener('resize', () => {
                 if (window.innerWidth > 768) {
                     hamburger.classList.remove('active');
@@ -2702,7 +2695,6 @@
                     hamburger.setAttribute('aria-expanded', 'false');
                 }
             });
-
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && navLinks.classList.contains('open')) {
                     hamburger.classList.remove('active');
@@ -2711,12 +2703,9 @@
                 }
             });
 
-            // ============================================
-            // ACTIVE NAV LINK ON SCROLL
-            // ============================================
+            // Active nav link
             const sections = document.querySelectorAll('section[id]');
             const navAnchors = document.querySelectorAll('.nav-links a');
-
             function updateActiveLink() {
                 const scrollPos = window.scrollY + 120;
                 sections.forEach(section => {
@@ -2734,18 +2723,14 @@
                 });
             }
 
-            // ============================================
-            // NAVBAR SCROLL EFFECT
-            // ============================================
+            // Navbar scroll
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
                 navbar.classList.toggle('scrolled', window.scrollY > 50);
                 updateActiveLink();
             });
 
-            // ============================================
-            // SCROLL PROGRESS
-            // ============================================
+            // Scroll progress
             const scrollProgress = document.getElementById('scrollProgress');
             function updateScrollProgress() {
                 const scrollTop = window.scrollY;
@@ -2756,9 +2741,7 @@
             window.addEventListener('resize', updateScrollProgress);
             updateScrollProgress();
 
-            // ============================================
-            // BACK TO TOP
-            // ============================================
+            // Back to top
             const backToTop = document.getElementById('backToTop');
             window.addEventListener('scroll', () => {
                 backToTop.classList.toggle('visible', window.scrollY > 400);
@@ -2767,9 +2750,7 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // ============================================
-            // SMOOTH SCROLL FOR ANCHOR LINKS
-            // ============================================
+            // Smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -2782,12 +2763,9 @@
                 });
             });
 
-            // ============================================
-            // WORDPRESS FILTER
-            // ============================================
+            // WordPress filter
             const filterButtons = document.querySelectorAll('.filter-btn');
             const wordpressCards = document.querySelectorAll('#wordpressGrid .project-card');
-
             filterButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterButtons.forEach(b => b.classList.remove('active'));
@@ -2795,18 +2773,12 @@
                     const filter = btn.getAttribute('data-filter');
                     wordpressCards.forEach(card => {
                         const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
+                        card.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
                     });
                 });
             });
 
-            // ============================================
-            // FAQ ACCORDION
-            // ============================================
+            // FAQ accordion
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
@@ -2824,19 +2796,15 @@
                 });
             });
 
-            // ============================================
-            // CONTACT FORM HANDLING
-            // ============================================
+            // Contact form
             const contactForm = document.getElementById('contactForm');
             const formStatus = document.getElementById('formStatus');
-
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const name = document.getElementById('formName').value.trim();
                 const email = document.getElementById('formEmail').value.trim();
                 const subject = document.getElementById('formSubject').value.trim();
                 const message = document.getElementById('formMessage').value.trim();
-
                 if (!name || !email || !subject || !message) {
                     formStatus.className = 'form-status error';
                     formStatus.textContent = '⚠️ Please fill in all required fields.';
@@ -2847,7 +2815,6 @@
                     formStatus.textContent = '⚠️ Please enter a valid email address.';
                     return;
                 }
-
                 formStatus.className = 'form-status success';
                 formStatus.textContent = '✅ Thank you for your message! I\'ll get back to you within 24 hours.';
                 contactForm.reset();
@@ -2857,9 +2824,7 @@
                 }, 5000);
             });
 
-            // ============================================
-            // INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
-            // ============================================
+            // Intersection Observer for animations
             const animateElements = document.querySelectorAll(
                 '.card, .project-card, .pillar-card, .tool-item, .timeline-item, .seo-demo-item, .contact-info-item'
             );
@@ -2872,7 +2837,6 @@
                     }
                 });
             }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
-
             animateElements.forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
