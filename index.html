@@ -424,7 +424,6 @@
         }
         .tag:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
 
-        /* Certificate View Button */
         .cert-view-btn {
             display: inline-flex;
             align-items: center;
@@ -510,85 +509,29 @@
         }
         .tool-item .tool-icon { font-size: 1.5rem; display: block; margin-bottom: 0.4rem; }
 
-        /* ============================================
-           PROJECTS (WITH IMAGES + VIEW BUTTON)
-           ============================================ */
+        /* PROJECTS */
         .project-card {
             background: var(--bg-card); border: 1px solid var(--border-light);
             border-radius: var(--border-radius); overflow: hidden;
             transition: all var(--transition-medium); box-shadow: var(--shadow-sm);
-            display: flex; flex-direction: column;
         }
         .project-card:hover {
             transform: translateY(-4px); box-shadow: var(--shadow-lg);
             border-color: var(--border-medium);
         }
         .project-image {
-            width: 100%;
-            height: 200px;
-            background: var(--bg-card-hover);
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: var(--text-muted);
+            width: 100%; height: 180px; background: var(--bg-card-hover);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 3rem; color: var(--text-muted); overflow: hidden;
         }
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform var(--transition-medium);
-        }
-        .project-card:hover .project-image img {
-            transform: scale(1.06);
-        }
-        .project-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+        .project-image img { width: 100%; height: 100%; object-fit: cover; }
+        .project-body { padding: 1.5rem; }
         .project-category {
             font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
             letter-spacing: 1px; color: var(--accent-primary); margin-bottom: 0.4rem;
         }
         .project-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
         .project-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.7; margin-bottom: 0.8rem; }
-
-        /* View Project Button */
-        .project-view-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            padding: 0.55rem 1.2rem;
-            font-size: 0.8rem;
-            font-weight: 600;
-            border-radius: 50px;
-            background: var(--accent-primary);
-            color: #fff;
-            border: 2px solid var(--accent-primary);
-            transition: all var(--transition-fast);
-            text-decoration: none;
-        }
-        .project-view-btn:hover {
-            background: var(--accent-hover);
-            border-color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
-            color: #fff;
-        }
-        .project-view-btn-outline {
-            background: transparent;
-            color: var(--accent-primary);
-        }
-        .project-view-btn-outline:hover {
-            background: var(--accent-primary);
-            color: #fff;
-        }
-        .project-actions {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-top: auto;
-            padding-top: 1rem;
-        }
 
         /* TIMELINE */
         .timeline { position: relative; padding-left: 2rem; }
@@ -868,8 +811,6 @@
             .focus-list { grid-template-columns: 1fr; }
             .timeline { padding-left: 1.2rem; }
             .timeline-item { padding-left: 1rem; }
-
-            .project-image { height: 180px; }
         }
 
         @media (max-width: 480px) {
@@ -891,10 +832,6 @@
             .contact-form { padding: 1.5rem; }
             .cta-section { padding: 2rem 1.5rem; }
             .cta-section h2 { font-size: 1.4rem; }
-
-            .project-image { height: 160px; }
-            .project-actions { flex-direction: column; }
-            .project-view-btn { width: 100%; justify-content: center; }
         }
     </style>
 </head>
@@ -1287,157 +1224,160 @@
         </div>
     </section>
 
-    <!-- ============================================
-         PROJECTS (WITH IMAGES + VIEW BUTTONS)
-         ============================================ -->
+    <!-- PROJECTS -->
     <section id="projects">
         <span class="section-label">Projects</span>
         <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Practical projects that demonstrate my digital marketing and WordPress skills.</p>
+        <p class="section-subtitle">Selected practical projects across WordPress, SEO, content marketing, and digital marketing.</p>
 
         <div class="grid-3">
-
-            <!-- PROJECT 1 -->
+            <!-- Project 01 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project1.png" alt="Business WordPress Website"
-                         onerror="this.parentElement.innerHTML='🏢'">
-                </div>
+                <div class="project-image">🖥️</div>
                 <div class="project-body">
                     <span class="project-category">WordPress</span>
                     <h3>Business WordPress Website</h3>
-                    <p>Designed and developed a responsive WordPress business website with SEO-friendly structure, optimized meta tags, and conversion-focused pages.</p>
-                    <div class="tag-group">
+                    <p>Designed and developed a responsive WordPress business website with a clean structure, modern layout, and SEO-friendly setup.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">WordPress</span>
                         <span class="tag">Elementor</span>
                         <span class="tag">Rank Math</span>
-                        <span class="tag">Search Console</span>
+                        <span class="tag">Responsive</span>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://your-project-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            🌐 View Project
-                        </a>
-                    </div>
+                    <a href="https://ak-neteng.github.io/Personal-website/" target="_blank" rel="noopener" class="cert-view-btn">View Project ↗</a>
                 </div>
             </div>
 
-            <!-- PROJECT 2 -->
+            <!-- Project 02 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project2.png" alt="SEO Audit & Optimization"
-                         onerror="this.parentElement.innerHTML='📈'">
+                <div class="project-image">📚</div>
+                <div class="project-body">
+                    <span class="project-category">WordPress + E-commerce</span>
+                    <h3>Digital Study Notes Website</h3>
+                    <p>Built a student-focused website structure for educational notes, premium resources, blog content, and digital product selling.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <a href="https://1269515.eu11.myftpupload.com/" target="_blank" rel="noopener" class="cert-view-btn">View Project ↗</a>
                 </div>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project-card">
+                <div class="project-image">🦷</div>
+                <div class="project-body">
+                    <span class="project-category">WordPress / Business</span>
+                    <h3>Dental Clinic Website</h3>
+                    <p>Created a professional clinic website concept with clear services, trust-focused sections, contact information, and responsive design.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">CTA</span>
+                    </div>
+                    <a href="https://drguptadent-2hvaeuqm.manus.space" target="_blank" rel="noopener" class="cert-view-btn">View Project ↗</a>
+                </div>
+            </div>
+
+            <!-- Project 04 -->
+            <div class="project-card">
+                <div class="project-image">👤</div>
+                <div class="project-body">
+                    <span class="project-category">Portfolio Website</span>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Developed a responsive personal portfolio to present skills, experience, education, certifications, and practical projects in a professional format.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <a href="https://ak-neteng.github.io/Personal-website/" target="_blank" rel="noopener" class="cert-view-btn">View Project ↗</a>
+                </div>
+            </div>
+
+            <!-- Project 05 -->
+            <div class="project-card">
+                <div class="project-image">📈</div>
                 <div class="project-body">
                     <span class="project-category">SEO</span>
                     <h3>SEO Audit &amp; Optimization</h3>
-                    <p>Comprehensive technical SEO audit, keyword research, competitor analysis, on-page optimization, and internal linking improvements for a practice website.</p>
-                    <div class="tag-group">
+                    <p>Practical SEO audit covering technical checks, keyword research, on-page optimization, internal linking, metadata, and search visibility improvements.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">Technical SEO</span>
-                        <span class="tag">Keyword Research</span>
                         <span class="tag">On-Page SEO</span>
+                        <span class="tag">Keyword Research</span>
                         <span class="tag">Schema</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://your-seo-project-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            📊 View Project
-                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 3 -->
+            <!-- Project 06 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project3.png" alt="Keyword Research Project"
-                         onerror="this.parentElement.innerHTML='🔑'">
-                </div>
+                <div class="project-image">🔑</div>
                 <div class="project-body">
                     <span class="project-category">Keyword Research</span>
                     <h3>Keyword Research Project</h3>
-                    <p>Conducted in-depth keyword research for a niche blog, mapped keywords to content, and created a content plan targeting low-competition, high-intent queries.</p>
-                    <div class="tag-group">
+                    <p>Conducted keyword research for a niche content project, grouped search intent, mapped keywords to pages, and prepared a practical content plan.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">Keyword Research</span>
                         <span class="tag">Semrush</span>
+                        <span class="tag">Search Intent</span>
                         <span class="tag">Content Plan</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://your-keyword-project-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            🔑 View Project
-                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 4 -->
+            <!-- Project 07 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project4.png" alt="Social Media Content Calendar"
-                         onerror="this.parentElement.innerHTML='📅'">
-                </div>
+                <div class="project-image">📅</div>
                 <div class="project-body">
                     <span class="project-category">Content Marketing</span>
-                    <h3>Social Media Content Calendar</h3>
-                    <p>Created a 30-day social media content calendar with post ideas, captions, hashtags, and Canva-designed creatives for practice brand accounts.</p>
-                    <div class="tag-group">
+                    <h3>30-Day Social Media Content Planner</h3>
+                    <p>Created a structured 30-day content planner with post ideas, captions, hashtags, content formats, and Canva-ready creative planning.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">Content Calendar</span>
                         <span class="tag">Canva</span>
                         <span class="tag">Social Media</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://your-content-calendar-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            📅 View Project
-                        </a>
+                        <span class="tag">Planning</span>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 5 -->
+            <!-- Project 08 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project5.png" alt="Landing Page Design"
-                         onerror="this.parentElement.innerHTML='🎯'">
-                </div>
+                <div class="project-image">🎯</div>
                 <div class="project-body">
                     <span class="project-category">Landing Page</span>
-                    <h3>Landing Page Design</h3>
-                    <p>Built a conversion-focused landing page in WordPress with clear CTAs, optimized copy, fast loading speed, and mobile-first responsive design.</p>
-                    <div class="tag-group">
+                    <h3>Business Landing Page</h3>
+                    <p>Built a focused landing page structure with clear calls to action, organized content sections, responsive layout, and user-friendly navigation.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">WordPress</span>
                         <span class="tag">CTA</span>
-                        <span class="tag">Conversion</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://your-landing-page-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            🎯 View Project
-                        </a>
+                        <span class="tag">Landing Page</span>
+                        <span class="tag">Responsive</span>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 6 -->
+            <!-- Project 09 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/project6.png" alt="SEO-Friendly Blog Website"
-                         onerror="this.parentElement.innerHTML='📝'">
-                </div>
+                <div class="project-image">📝</div>
                 <div class="project-body">
                     <span class="project-category">WordPress + SEO</span>
                     <h3>SEO-Friendly Blog Website</h3>
-                    <p>Built a blog with SEO-friendly architecture, categories, internal linking, schema markup, XML sitemap, and Search Console integration.</p>
-                    <div class="tag-group">
+                    <p>Built a blog structure with categories, internal linking, SEO metadata, schema markup, XML sitemap setup, and Search Console integration.</p>
+                    <div class="tag-group" style="margin-bottom: 0.8rem;">
                         <span class="tag">WordPress</span>
+                        <span class="tag">SEO</span>
                         <span class="tag">Schema</span>
                         <span class="tag">Sitemap</span>
-                        <span class="tag">SEO</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://your-blog-project-link.com" target="_blank" rel="noopener" class="project-view-btn">
-                            📝 View Project
-                        </a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -1451,7 +1391,7 @@
             <div class="card">
                 <span class="card-icon">📜</span>
                 <h3>Digital Marketing Certified</h3>
-                <p>Completed HubSpot Academy’s Digital Marketing Certification, covering SEO content, website optimisation, social media strategy, video engagement, advertising, and measuring digital marketing results.</p>
+                <p>Completed HubSpot Academy’s Digital Marketing Certification, covering SEO content, website optimisation, social media strategy, video engagement, advertising, and measuring digital marketing results..</p>
                 <div class="tag-group">
                     <span class="tag">HubSpot Academy</span>
                     <span class="tag">Digital Marketing</span>
@@ -1493,7 +1433,7 @@
             <div class="card">
                 <span class="card-icon">🖥️</span>
                 <h3>WordPress Certification</h3>
-                <p>Completed the Introduction to WordPress online course from Simplilearn SkillUp, demonstrating foundational knowledge of WordPress and a commitment to developing practical web and digital skills.</p>
+                <p> Completed the Introduction to WordPress online course from Simplilearn SkillUp, demonstrating foundational knowledge of WordPress and a commitment to developing practical web and digital skills..</p>
                 <div class="tag-group">
                     <span class="tag">WordPress</span>
                     <span class="tag">Simplilearn SkillUp</span>
@@ -1705,20 +1645,24 @@
                 }
             });
 
+            // Close on overlay click
             navOverlay.addEventListener('click', closeMenu);
 
+            // Close on any nav link click
             navLinks.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     closeMenu();
                 });
             });
 
+            // Close on Escape key
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && navLinks.classList.contains('open')) {
                     closeMenu();
                 }
             });
 
+            // Reset on desktop resize
             window.addEventListener('resize', () => {
                 if (window.innerWidth > 768) {
                     closeMenu();
