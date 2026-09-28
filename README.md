@@ -2,341 +2,177 @@
 
 # 👨‍💻 ANUP KUMAR SINGH
 
-### Digital Marketing | SEO | WordPress | Content Marketing | Social Media | Analytics | AI Marketing
+### Digital Marketing Executive | SEO | WordPress | Content | Analytics
 
-🌐 **Live Portfolio**
-👉 https://anupdigitalgrowth.github.io/Portfolio-website/
+**Building practical digital marketing projects, websites, SEO strategies and growth systems.**
 
-📧 **Email:** [anupkumarsingh595@gmail.com](mailto:anupkumarsingh595@gmail.com)
-💼 **LinkedIn:** https://www.linkedin.com/in/anup-kumar-singh-6405b128b/
-
----
-
-⚡ *Building brands, growing websites, creating content, and driving measurable digital growth with SEO, social media, analytics, and AI.* ⚡
+<p>
+  <a href="https://anupdigitalgrowth.github.io/Anup-kumar-singh/">
+    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit-2563EB?style=for-the-badge" alt="Live Portfolio">
+  </a>
+  <a href="mailto:anupkumarsingh595@gmail.com">
+    <img src="https://img.shields.io/badge/📧_Email-Contact-111827?style=for-the-badge" alt="Email">
+  </a>
+  <a href="https://www.linkedin.com/in/ak-neteng/">
+    <img src="https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge" alt="LinkedIn">
+  </a>
+</p>
 
 </div>
 
 ---
 
-## 🚀 About Me
+# 👋 About Me
 
-I am a **Digital Marketing professional and BCA student** focused on building practical skills in **SEO, WordPress, content marketing, social media marketing, analytics, and AI-powered marketing**.
+I am a **BCA student building practical experience in Digital Marketing**, with a strong focus on **SEO, WordPress, content marketing, social media, analytics and AI-assisted marketing workflows**.
 
-I enjoy creating digital marketing strategies that connect businesses with the right audience through search engines, websites, social media, and content.
+I learn by building real projects, creating marketing strategies, conducting website and SEO audits, researching keywords, developing content systems and analyzing digital performance.
 
-My approach focuses on:
+My approach is simple:
 
-**Research → Strategy → Content → Optimization → Analytics → Growth**
+> **Research → Strategy → Execution → Measurement → Optimization**
 
-Currently, I am building practical digital marketing projects, case studies, marketing resources, and portfolio work to develop strong real-world experience.
-
-I am interested in opportunities related to **Digital Marketing, SEO, WordPress, Content Marketing, Social Media Marketing, and Digital Growth.**
+I am currently looking for **entry-level opportunities, internships and freelance projects** where I can contribute to digital marketing, SEO, WordPress, content and website growth.
 
 ---
 
-## 🛠️ Digital Marketing Expertise
+# 🎯 Career Focus
 
-### 🔎 Search Engine Optimization (SEO)
+I'm interested in opportunities such as:
 
-* Keyword Research
-* Search Intent Analysis
-* On-Page SEO
-* Technical SEO
-* Local SEO
-* Content Optimization
-* Internal Linking
-* SEO Audits
-* Competitor Analysis
-* Search Console Analysis
-* SEO Reporting
-
-### 🌐 WordPress & Website Marketing
-
-* WordPress Website Setup
-* Website Structure
-* Landing Pages
-* Blog Setup
-* WordPress SEO
-* Rank Math
-* Website Optimization
-* Conversion Optimization
-* Content Organization
-* Basic HTML & CSS
-
-### 📱 Social Media Marketing
-
-* Instagram Marketing
-* Facebook Marketing
-* LinkedIn Marketing
-* Social Media Strategy
-* Content Pillars
-* Content Calendars
-* Reels & Short-Form Content
-* Caption Strategy
-* Hashtag Research
-* Audience Engagement
-* Social Media Reporting
-
-### ✍️ Content Marketing
-
-* Content Strategy
-* Blog Content Planning
-* SEO Content
-* Content Calendars
-* Blog Topic Research
-* Search-Based Content
-* Content Optimization
-* Educational Content
-* Promotional Content
-* Lead Generation Content
-
-### 📊 Analytics & Performance
-
-* Google Analytics
-* Google Search Console
-* Website Traffic Analysis
-* SEO Performance Analysis
-* Keyword Performance
-* Conversion Tracking
-* KPI Planning
-* Marketing Reports
-* Campaign Performance
-* Data-Driven Optimization
-
-### 🤖 AI & Digital Marketing
-
-* AI Content Creation
-* AI SEO Workflows
-* AI Keyword Research
-* AI Competitor Research
-* AI Social Media Content
-* AI Ad Copy
-* Prompt Engineering
-* AI Marketing Automation
-* AI-Assisted Research
-* AI Productivity Workflows
-
-### 📢 Digital Advertising
-
-* Google Ads Fundamentals
-* Meta Ads Fundamentals
-* Campaign Planning
-* Audience Research
-* Ad Copy Strategy
-* Landing Page Strategy
-* Campaign KPIs
-* A/B Testing Concepts
-* Performance Analysis
+- Digital Marketing Executive
+- SEO Executive
+- SEO Analyst — Entry Level
+- Digital Marketing Associate
+- WordPress Executive
+- Content Marketing Executive
+- Digital Marketing Intern
 
 ---
 
-## 🧰 Tools & Platforms
+# 🧠 Core Skills
+
+| Area | Skills |
+|---|---|
+| 🔎 **SEO** | Keyword Research, Search Intent, On-Page SEO, Technical SEO, Local SEO, SEO Audits, Internal Linking |
+| 🌐 **Web & WordPress** | WordPress, Elementor, Rank Math, WooCommerce, HTML, CSS, Landing Pages |
+| ✍️ **Content** | Content Strategy, SEO Content, Blog Planning, Content Calendars, Content Optimization |
+| 📱 **Social Media** | Instagram, Facebook, LinkedIn, Content Strategy, Reels, Captions, Hashtag Research |
+| 📊 **Analytics** | Google Analytics, Search Console, Traffic Analysis, KPI Tracking, SEO Reporting |
+| 🤖 **AI Marketing** | AI Content Workflows, AI Research, Prompt Engineering, AI SEO Workflows, Marketing Automation |
+| 📢 **Advertising** | Google Ads Fundamentals, Meta Ads Fundamentals, Campaign Planning, Ad Copy, A/B Testing Concepts |
+| 🎨 **Design** | Canva, Social Media Creatives, Marketing Visuals |
+
+---
+
+# 🛠️ Tools & Platforms
 
 ### SEO & Analytics
 
-* Google Search Console
-* Google Analytics
-* Google Keyword Planner
-* Semrush
-* Ahrefs
-* Google Trends
+![Google Search Console](https://img.shields.io/badge/Google_Search_Console-458CF5?style=flat-square&logo=google&logoColor=white)
+![Google Analytics](https://img.shields.io/badge/Google_Analytics-E37400?style=flat-square&logo=googleanalytics&logoColor=white)
+![Google Keyword Planner](https://img.shields.io/badge/Keyword_Planner-4285F4?style=flat-square&logo=google&logoColor=white)
+![Semrush](https://img.shields.io/badge/Semrush-FF642D?style=flat-square&logo=semrush&logoColor=white)
+![Ahrefs](https://img.shields.io/badge/Ahrefs-FF6B6B?style=flat-square&logo=ahrefs&logoColor=white)
 
-### Website & SEO
+### Website & Development
 
-* WordPress
-* Rank Math
-* HTML
-* CSS
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-### Social Media
+### Social Media & Design
 
-* Instagram
-* Facebook
-* LinkedIn
-* Meta Business Suite
-
-### Design & Content
-
-* Canva
-* AI Content Tools
-
-### AI Marketing
-
-* Generative AI Tools
-* AI Research Tools
-* AI Content Workflows
-* Prompt Engineering
+![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat-square&logo=canva&logoColor=white)
 
 ---
 
-## 📂 Featured Digital Marketing Projects
+# 🚀 Featured Projects
 
-### 🔎 SEO Portfolio
+## 01. 🌐 Indian Digital Growth
 
-A collection of practical SEO work covering keyword research, competitor analysis, technical SEO, on-page optimization, content strategy, and SEO reporting.
+**Digital Marketing & Web Development Agency Website**
 
-**Focus:** SEO Strategy, Keyword Research, Technical SEO, Content Optimization
+A business website designed to present web development, SEO and digital growth services to local businesses and startups.
 
----
+### Work Areas
 
-### 🌐 WordPress SEO Project
+- Website structure and UI
+- Service architecture
+- SEO foundations
+- Conversion-focused CTAs
+- Lead-generation flow
+- Responsive design
+- Business-focused content
 
-A practical website optimization project focused on improving website structure, content organization, SEO configuration, and search visibility.
-
-**Focus:** WordPress, Rank Math, On-Page SEO, Technical SEO
-
----
-
-### 📱 Social Media Marketing Strategy
-
-Developed social media strategies including content pillars, content calendars, audience research, captions, and engagement planning.
-
-**Platforms:** Instagram, Facebook, LinkedIn
+**Focus:** `Web Development` `SEO` `UX` `Lead Generation`
 
 ---
 
-### ✍️ Content Marketing Strategy
+## 02. 📚 Digital Study Notes
 
-Created content strategies designed around audience needs, search intent, keyword opportunities, and business objectives.
+**Educational Digital Product Platform**
 
-**Focus:** Content Strategy, SEO Content, Blog Planning, Content Calendar
+A practical digital-product project focused on publishing, marketing and selling educational resources online.
 
----
+### Work Areas
 
-### 🤖 AI Digital Marketing Workflow
+- WordPress
+- WooCommerce
+- SEO
+- Product optimization
+- Content marketing
+- Keyword research
+- Social media promotion
+- Conversion strategy
 
-Developed AI-assisted workflows for marketing research, content creation, SEO, competitor analysis, social media planning, and marketing productivity.
-
-**Tech:** Generative AI, Prompt Engineering, AI Marketing
-
----
-
-### 📚 Digital Study Notes Marketing
-
-A practical digital-product marketing project focused on promoting educational notes and resources.
-
-**Focus:**
-
-* Audience Research
-* Keyword Research
-* SEO
-* Content Marketing
-* Social Media Marketing
-* Product Promotion
-* Conversion Strategy
-* Analytics
+**Focus:** `WordPress` `SEO` `Content Marketing` `Digital Products`
 
 ---
 
-## 📊 Digital Marketing Workflow
+## 03. 🦷 Dr. Gupta Dentistry
+
+**Local Business Website / Portfolio Demo**
+
+A portfolio project focused on building a professional online presence for a local dental business.
+
+### Work Areas
+
+- Website structure
+- Service pages
+- Local SEO foundations
+- Mobile responsive design
+- CTA optimization
+- Lead-generation elements
+- User experience
+
+**Focus:** `Local SEO` `Web Design` `UX` `Lead Generation`
+
+> **Project Type:** Portfolio Demo
+
+---
+
+## 04. 🔎 SEO Audit & Keyword Research
+
+**Practical SEO Research Project**
+
+A structured SEO workflow covering website analysis, keyword research, search intent, competitor research and optimization opportunities.
+
+### Workflow
 
 ```text
-                 MARKET RESEARCH
-                       ↓
-                TARGET AUDIENCE
-                       ↓
-                 BUYER PERSONA
-                       ↓
-              COMPETITOR ANALYSIS
-                       ↓
-              MARKETING STRATEGY
-                       ↓
-        ┌──────────────┼──────────────┐
-        ↓              ↓              ↓
-       SEO          CONTENT       SOCIAL MEDIA
-        ↓              ↓              ↓
-        └──────────────┼──────────────┘
-                       ↓
-                  WEBSITE
-                       ↓
-                 CONVERSIONS
-                       ↓
-                   ANALYTICS
-                       ↓
-                  OPTIMIZATION
-                       ↓
-                     GROWTH
-```
-
----
-
-## 📚 Case Studies
-
-### Digital Study Notes
-
-A practical digital marketing case study for an educational digital-product platform.
-
-**Objective:**
-
-Build online visibility, attract students, increase website traffic, and improve digital product discovery and conversions.
-
-**Marketing Areas:**
-
-* SEO
-* Keyword Research
-* Content Marketing
-* Social Media
-* Website Optimization
-* Product Marketing
-* Analytics
-
-**Status:** Ongoing
-
----
-
-## 🎯 Currently Learning & Building
-
-* Advanced SEO
-* Technical SEO
-* Local SEO
-* WordPress SEO
-* Content Marketing
-* Social Media Marketing
-* Google Analytics
-* Google Ads
-* Meta Ads
-* AI Marketing
-* Marketing Automation
-* Conversion Optimization
-
----
-
-## 📈 My Marketing Philosophy
-
-> **Don't just create content. Create content with a purpose.**
-
-My approach is:
-
-**Research → Strategy → Execution → Measurement → Optimization**
-
-The goal is to build marketing systems that generate **visibility, engagement, leads, and conversions.**
-
----
-
-## 📧 Let's Connect
-
-I’m open to collaboration and opportunities related to:
-
-* Digital Marketing
-* SEO
-* WordPress
-* Content Marketing
-* Social Media Marketing
-* Local SEO
-* AI Marketing
-* Website Growth
-* Digital Product Marketing
-
-📩 **Email:** [anupkumarsingh595@gmail.com](mailto:anupkumarsingh595@gmail.com)
-💼 **LinkedIn:** https://www.linkedin.com/in/anup-kumar-singh-6405b128b/
-🌐 **Portfolio:** https://anupdigitalgrowth.github.io/Portfolio-website/
-
----
-
-<div align="center">
-
-### ⭐ If you like my work, consider giving my repositories a star ⭐
-
-*Building practical digital marketing projects and growing one project at a time.*
-
-</div>
+Website Analysis
+       ↓
+Keyword Research
+       ↓
+Search Intent
+       ↓
+Competitor Research
+       ↓
+On-Page Audit
+       ↓
+Technical SEO Review
+       ↓
+Optimization Recommendations
